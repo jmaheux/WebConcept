@@ -1,1 +1,282 @@
-/*    Document   : style    Created on : 2012-03-05, 12:00:00    Author     : Daniel Taillefer    Description:        Purpose of the stylesheet follows.*//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CLASSES GÉNÉRALES @@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */root {    display: block;}html {}body {    margin: 0;    padding: 0;    background: transparent url('/WebConcept/images/background3.jpg') center top no-repeat;    font-weight: 100;    background-size: cover;}.siteWidth {    width:100%;    max-width: 800px;    min-width: 400px;    margin: 0 auto 0 auto;}.innerSiteWidth {    width:100%;    max-width: 800px;    min-width: 400px;}/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@ TOP & BOTTOM BOXES @@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */.topBoxWrapper {    width: 100%;    position: absolute;    margin-top: -30px;    z-index: 2;}.bottomBoxWrapper {    width: 100%;    z-index: 2;}.topLeftCornerImageHolder {    background: transparent url('/WebConcept/images/top_left_corner.png') left top no-repeat;}.topRightCornerImageHolder {    background: transparent url('/WebConcept/images/top_right_corner.png') right top no-repeat;}.bottomLeftCornerImageHolder {    background: transparent url('/WebConcept/images/bottom_left_corner.png') left bottom no-repeat;}.bottomRightCornerImageHolder {    background: transparent url('/WebConcept/images/bottom_right_corner.png') right bottom no-repeat;}.topGradientHolder {    background: transparent url('/WebConcept/images/top_gradient.png') left top repeat-x;    height: 60px;    border-top: 1px solid #141414;    margin: 0 10px;    width: auto;    margin-top: -31px;    position: relative;    z-index: 3;}.bottomGradientHolder {    background: transparent url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;    height: 60px;    border-bottom: 1px solid #141414;    margin: 0 10px;    width: auto;    margin-top: -61px;    position: relative;    z-index: 3;}.topGradientBackground {    margin: 0 10px;    width: auto;    height: 30px;    background-color: rgba(5, 5, 5, 0.9);}.bottomGradientBackground {    margin: 0 10px;    width: auto;    height: 32px;    background-color: rgba(5, 5, 5, 0.9);}.clear {    clear: both;}.fullWidth {    width: 100%;}/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */#menuItemsWrapper {    display: table;    margin: 0 auto;}#contact{    background: transparent url('/WebConcept/images/top_upper_bar.png') left top repeat-x;    height:42px;}#menu{    background: transparent url('/WebConcept/images/bottom_upper_bar.png') left top repeat-x;    height:82px;}#logo{    height:77px;    float: left;    padding-right: 30px;}#logo img {    width: 161px;    position: relative;    bottom: 63px;}#slider{    height:400px;}#content{    height: 450px;    background-color: rgba(5, 5, 5, 0.9);}#contentWrapper {    width: 100%;}.floatingSeparator {    width: 100%;    height: 200px;}#footer{    height:300px;}/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MENU @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ *//* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */#menu ul {    color: white;    font-family: 'Oswald', sans-serif;    font-size: 18px;    height: 82px;    line-height: 82px;    text-align: center;    position: relative;    margin: 0;    display: block;    min-width: 960px;}#menu ul li {    display: block;    float: left;    list-style: none;    cursor: pointer;    margin-top: -1px;}#menu ul li:first-child {    height: 100%;}#menu ul li .upperBorder {    width: 100%;    height: 1px;}#menu ul li .upperLeftBorder {    float: left;    width: 25%;    height: 1px;}#menu ul li .upperCenterLeftBorder {    float: left;    width: 25%;    height: 1px;}#menu ul li .upperCenterRightBorder {    float: left;    width: 25%;    height: 1px;}#menu ul li .upperRightBorder {    float: left;    width: 25%;    height: 1px;}#menu ul li.selected,#menu ul li:hover{    color: #6DD145;}#menu ul li.selected,#menu ul li:hover{    background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);    background-image: -webkit-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);    background-image: -o-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);    background-image: -ms-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);    background-image: radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);}#menu ul li.selected .upperLeftBorder,#menu ul li:hover .upperLeftBorder {    background-image: linear-gradient(left , #000000, #008806);    background-image: -o-linear-gradient(left , #000000, #008806);    background-image: -moz-linear-gradient(left , #000000, #008806);    background-image: -webkit-linear-gradient(left , #000000, #008806);    background-image: -ms-linear-gradient(left , #000000, #008806);    background-image: linear, left top, left bottom, from(#000000), to(#008806);    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000,endColorstr=#008806,GradientType=1);}#menu ul li.selected .upperCenterLeftBorder,#menu ul li:hover .upperCenterLeftBorder{    background-image: linear-gradient(left, #008806, #6aa56d);    background-image: -o-linear-gradient(left, #008806, #6aa56d);    background-image: -moz-linear-gradient(left, #008806, #6aa56d);    background-image: -webkit-linear-gradient(left, #008806, #6aa56d);    background-image: -ms-linear-gradient(left, #008806, #6aa56d);    background-image: linear, left top, left bottom, from(#008806), to(#6aa56d);    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#6aa56d,GradientType=1);}#menu ul li.selected .upperCenterRightBorder,#menu ul li:hover .upperCenterRightBorder {    background-image: linear-gradient(left, #6aa56d, #008806);    background-image: -o-linear-gradient(left, #6aa56d, #008806);    background-image: -moz-linear-gradient(left, #6aa56d, #008806);    background-image: -webkit-linear-gradient(left, #6aa56d, #008806);    background-image: -ms-linear-gradient(left, #6aa56d, #008806);    background-image: linear, left top, left bottom, from(#6aa56d), to(#008806);    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6aa56d,endColorstr=#008806,GradientType=1);}#menu ul li.selected .upperRightBorder,#menu ul li:hover .upperRightBorder {    background-image: linear-gradient(left, #008806, #000000);    background-image: -o-linear-gradient(left, #008806, #000000);    background-image: -moz-linear-gradient(left, #008806, #000000);    background-image: -webkit-linear-gradient(left, #008806, #000000);    background-image: -ms-linear-gradient(left, #008806, #000000);    background-image: linear, left top, left bottom, from(#008806), to(#000000);    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#000000,GradientType=1);}#menu ul li .topShadow {    height: 81px;}#menu ul li .bottomShadow {    height: 81px;    padding: 0 16px;}#menu ul li .leftBorder {    height: 81px;}#menu ul li .rightBorder {    height: 81px;}#menu ul li.selected .topShadow,#menu ul li:hover .topShadow{    background: transparent url('/WebConcept/images/top_border_shadow.png') left top repeat-x;}#menu ul li.selected .bottomShadow,#menu ul li:hover .bottomShadow {    background: transparent url('/WebConcept/images/bottom_border_shadow.png') left bottom repeat-x;}#menu ul li.selected .leftBorder,#menu ul li:hover .leftBorder {    background: transparent url('/WebConcept/images/left_border_gradient.png') left top no-repeat;}#menu ul li.selected .rightBorder,#menu ul li:hover .rightBorder {    background: transparent url('/WebConcept/images/right_border_gradient.png') right top no-repeat;}
+/*
+    Document   : style
+    Created on : 2012-03-05, 12:00:00
+    Author     : Daniel Taillefer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CLASSES GÉNÉRALES @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+root {
+    display: block;
+}
+html {
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent url('/WebConcept/images/background3.jpg') center top no-repeat;
+    font-weight: 100;
+    background-size: cover;
+}
+.siteWidth {
+    width:100%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto 0 auto;
+
+}
+.innerSiteWidth {
+    width:100%;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ TOP & BOTTOM BOXES @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.topBoxWrapper {
+    width: 100%;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 2;
+}
+.bottomBoxWrapper {
+    width: 100%;
+    z-index: 2;
+}
+.topLeftCornerImageHolder {
+    background: transparent url('/WebConcept/images/top_left_corner.png') left top no-repeat;
+}
+.topRightCornerImageHolder {
+    background: transparent url('/WebConcept/images/top_right_corner.png') right top no-repeat;
+}
+.bottomLeftCornerImageHolder {
+    background: transparent url('/WebConcept/images/bottom_left_corner.png') left bottom no-repeat;
+}
+.bottomRightCornerImageHolder {
+    background: transparent url('/WebConcept/images/bottom_right_corner.png') right bottom no-repeat;
+}
+.topGradientHolder {
+    background: transparent url('/WebConcept/images/top_gradient.png') left top repeat-x;
+    height: 60px;
+    border-top: 1px solid #141414;
+    margin: 0 10px;
+    width: auto;
+    margin-top: -31px;
+    position: relative;
+    z-index: 3;
+}
+.bottomGradientHolder {
+    background: transparent url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;
+    height: 60px;
+    border-bottom: 1px solid #141414;
+    margin: 0 10px;
+    width: auto;
+    margin-top: -61px;
+    position: relative;
+    z-index: 3;
+}
+.topGradientBackground {
+    margin: 0 10px;
+    width: auto;
+    height: 30px;
+    background-color: rgba(5, 5, 5, 0.9);
+}
+.bottomGradientBackground {
+    margin: 0 10px;
+    width: auto;
+    height: 32px;
+    background-color: rgba(5, 5, 5, 0.9);
+}
+.clear {
+    clear: both;
+}
+.fullWidth {
+    width: 100%;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#menuItemsWrapper {
+    display: table;
+    margin: 0 auto;
+}
+#contact
+{
+    background: transparent url('/WebConcept/images/top_upper_bar.png') left top repeat-x;
+    height:42px;
+}
+#menu
+{
+    background: transparent url('/WebConcept/images/bottom_upper_bar.png') left top repeat-x;
+    height:82px;
+}
+#logo
+{
+    height:77px;
+    float: left;
+    padding-right: 30px;
+}
+#logo img {
+    width: 161px;
+    position: relative;
+    bottom: 63px;
+}
+#slider
+{
+    height:400px;
+}
+#content
+{
+    height: 450px;
+    background-color: rgba(5, 5, 5, 0.9);
+    padding-top: 1px;
+}
+#contentWrapper {
+    width: 100%;
+}
+.floatingSeparator {
+    width: 100%;
+    height: 200px;
+}
+#footer
+{
+    height:300px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MENU @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#menu ul {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    height: 82px;
+    line-height: 82px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    display: block;
+    min-width: 960px;
+}
+#menu ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    margin-top: -1px;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+#menu ul li:first-child {
+    height: 100%;
+}
+#menu ul li .upperBorder {
+    width: 100%;
+    height: 1px;
+}
+#menu ul li .upperLeftBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperCenterLeftBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperCenterRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li.selected a,
+#menu ul li:hover a {
+    color: #6DD145;
+}
+#menu ul li:hover{
+    background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -webkit-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -o-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -ms-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+}
+#menu ul li.selected .upperLeftBorder,
+#menu ul li:hover .upperLeftBorder {
+    background-image: linear-gradient(left , #000000, #008806);
+    background-image: -o-linear-gradient(left , #000000, #008806);
+    background-image: -moz-linear-gradient(left , #000000, #008806);
+    background-image: -webkit-linear-gradient(left , #000000, #008806);
+    background-image: -ms-linear-gradient(left , #000000, #008806);
+    background-image: linear, left top, left bottom, from(#000000), to(#008806);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000,endColorstr=#008806,GradientType=1);
+}
+#menu ul li.selected .upperCenterLeftBorder,
+#menu ul li:hover .upperCenterLeftBorder{
+    background-image: linear-gradient(left, #008806, #6aa56d);
+    background-image: -o-linear-gradient(left, #008806, #6aa56d);
+    background-image: -moz-linear-gradient(left, #008806, #6aa56d);
+    background-image: -webkit-linear-gradient(left, #008806, #6aa56d);
+    background-image: -ms-linear-gradient(left, #008806, #6aa56d);
+    background-image: linear, left top, left bottom, from(#008806), to(#6aa56d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#6aa56d,GradientType=1);
+}
+#menu ul li.selected .upperCenterRightBorder,
+#menu ul li:hover .upperCenterRightBorder {
+    background-image: linear-gradient(left, #6aa56d, #008806);
+    background-image: -o-linear-gradient(left, #6aa56d, #008806);
+    background-image: -moz-linear-gradient(left, #6aa56d, #008806);
+    background-image: -webkit-linear-gradient(left, #6aa56d, #008806);
+    background-image: -ms-linear-gradient(left, #6aa56d, #008806);
+    background-image: linear, left top, left bottom, from(#6aa56d), to(#008806);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6aa56d,endColorstr=#008806,GradientType=1);
+}
+#menu ul li.selected .upperRightBorder,
+#menu ul li:hover .upperRightBorder {
+    background-image: linear-gradient(left, #008806, #000000);
+    background-image: -o-linear-gradient(left, #008806, #000000);
+    background-image: -moz-linear-gradient(left, #008806, #000000);
+    background-image: -webkit-linear-gradient(left, #008806, #000000);
+    background-image: -ms-linear-gradient(left, #008806, #000000);
+    background-image: linear, left top, left bottom, from(#008806), to(#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#000000,GradientType=1);
+}
+#menu ul li .topShadow {
+    height: 81px;
+}
+#menu ul li .bottomShadow {
+    height: 81px;
+    padding: 0 16px;
+}
+#menu ul li .leftBorder {
+    height: 81px;
+}
+#menu ul li .rightBorder {
+    height: 81px;
+}
+#menu ul li.selected .topShadow,
+#menu ul li:hover .topShadow{
+    background: transparent url('/WebConcept/images/top_border_shadow.png') left top repeat-x;
+}
+#menu ul li.selected .bottomShadow,
+#menu ul li:hover .bottomShadow {
+    background: transparent url('/WebConcept/images/bottom_border_shadow.png') left bottom repeat-x;
+}
+#menu ul li.selected .leftBorder,
+#menu ul li:hover .leftBorder {
+    background: transparent url('/WebConcept/images/left_border_gradient.png') left top no-repeat;
+}
+#menu ul li.selected .rightBorder,
+#menu ul li:hover .rightBorder {
+    background: transparent url('/WebConcept/images/right_border_gradient.png') right top no-repeat;
+}
