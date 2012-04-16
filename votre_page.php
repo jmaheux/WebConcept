@@ -20,6 +20,7 @@ $temp->render();
     <temp:contentPlaceHolder id="content">
         <div class="container">
             <h1 id="greetings">Bonjour et bienvenu sur le site de Web Concept</h1>
+            <img src="./images/graph1.png" />
         </div>
     </temp:contentPlaceHolder>
 </temp:templateContent>

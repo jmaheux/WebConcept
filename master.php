@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7" lang="fr" xmlns:temp="http://template"> <![endif]-->
 <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7" lang="fr" xmlns:temp="http://template"> <![endif]-->
 <!--[if IE 8]>     <html class="ie ie8 lte9 lte8" lang="fr" xmlns:temp="http://template"> <![endif]-->
@@ -8,6 +8,7 @@
 <html lang="fr" xmlns:temp="http://template">
     <!--<![endif]-->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1" xml:lang="fr" />
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="css/style.css"/>
@@ -102,25 +103,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.youporn.com" target="blank">
-                            <div class="upperBorder">
-                                <div class="upperLeftBorder"></div>
-                                <div class="upperCenterLeftBorder"></div>
-                                <div class="upperCenterRightBorder"></div>
-                                <div class="upperRightBorder"></div>
-                            </div>
-                            <div class="leftBorder">
-                                <div class="rightBorder">
-                                    <div class="topShadow">
-                                        <div class="bottomShadow">
-                                            PORN
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
                         <a href="contactez_nous.php">
                             <div class="upperBorder">
                                 <div class="upperLeftBorder"></div>
@@ -150,7 +132,12 @@
         <div class="topLeftCornerImageHolder siteWidth">
             <div class="topRightCornerImageHolder siteWidth">
                 <div class="topGradientBackground innerSiteWidth"></div>
-                <div class="topGradientHolder innerSiteWidth"></div>
+                <div class="topGradientHolder innerSiteWidth">
+                    <div class="topBoxContainer">
+                        <temp:contentPlaceHolder id="topBox">
+                        </temp:contentPlaceHolder>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -162,38 +149,20 @@
         <div class="bottomLeftCornerImageHolder siteWidth">
             <div class="bottomRightCornerImageHolder siteWidth">
                 <div class="bottomGradientBackground innerSiteWidth"></div>
-                <div class="bottomGradientHolder siteWidth"></div>
+                <div class="bottomGradientHolder innerSiteWidth"></div>
             </div>
         </div>
     </div>
     <div id="footer" class="siteWidth"></div>
     <script type="text/javascript">
         $(window).load(function(){
-            $('#menu ul li').click(function(){
-                $('#menu ul li.selected').removeClass('selected');
-                $(this).addClass('selected');
-            })
+
         });
     </script>
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
 <temp:contentPlaceHolder id="script">
 </temp:contentPlaceHolder>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
