@@ -51,7 +51,7 @@ body {
 .bottomBoxWrapper {
     width: 100%;
     z-index: 2;
-    margin-top: -30px;
+    margin-top: -31px;
 }
 .topLeftCornerImageHolder {
     background: transparent url('/WebConcept/images/top_left_corner.png') left top no-repeat;
@@ -67,9 +67,10 @@ body {
 }
 .bottomRightCornerImageHolder {
     background: transparent url('/WebConcept/images/bottom_right_corner.png') right bottom no-repeat;
+    padding-top: 1px;
 }
 .topGradientHolder {
-    background: #050505 url('/WebConcept/images/top_gradient.png') left top repeat-x;
+    background: transparent url('/WebConcept/images/top_gradient.png') left top repeat-x;
     height: 60px;
     border-top: 1px solid #141414;
     margin: 0 10px;
@@ -79,23 +80,22 @@ body {
     z-index: 3;
 }
 .bottomGradientHolder {
-    background: #050505 url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;
+    background: transparent url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;
     height: 60px;
     border-bottom: 1px solid #141414;
-    margin: 0 10px;
+    margin: -60px 10px 0;
     width: auto;
-    margin-top: -33px;
     position: relative;
     z-index: 3;
 }
 .topGradientBackground {
     margin: 0 10px;
     width: auto;
-    height: 30px;
+    height: 31px;
     background-color: rgba(5, 5, 5, 1);
 }
 .bottomGradientBackground {
-    margin: 0 10px;
+    margin: 29px 10px 0;
     width: auto;
     height: 32px;
     background-color: rgba(5, 5, 5, 1);
@@ -385,7 +385,7 @@ body {
     width: 25%;
     height: 1px;
 }
-#footerbox1 .upperCenterLeftBorder, 
+#footerbox1 .upperCenterLeftBorder,
 #footerbox2 .upperCenterLeftBorder,
 #footerbox3 .upperCenterLeftBorder{
     float: left;
@@ -467,9 +467,9 @@ body {
     height:35px;
 }
 #social{
-      height: 75px;
-      text-align:center;
- }
+    height: 75px;
+    text-align:center;
+}
 .spansocial{
     font-family: 'Poiret One', cursive;
     font-size: 15px;
@@ -523,10 +523,10 @@ body {
     height:100px;
 }
 #accueilForm{
-    
+
     margin-top:10px;
 }
-input[type=text]{
+#formName{
     -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
     -moz-border-radius: 5px; /* FF1-3.6 */
     border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
@@ -544,7 +544,7 @@ input[type=text]{
     font-size:16px;
     outline:none;
 }
-input[type=email]{
+#formEmail{
     -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
     -moz-border-radius: 5px; /* FF1-3.6 */
     border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
@@ -562,7 +562,7 @@ input[type=email]{
     font-size:16px;
     outline:none;
 }
-input[type=submit]{
+#formButton{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -604,11 +604,11 @@ input[type=submit]{
     font-size:16px;
     outline:none;
 }
-input[type=text]:focus{
+#formName:focus{
     color:#008806;
     border:1px solid white;
 }
-input[type=email]:focus{
+#formEmail:focus{
     color:#008806;
     border:1px solid white;
 }
@@ -616,15 +616,13 @@ input[type=email]:focus{
     color:#008806;
     border:1px solid white;
 }
-#footer #footerbox2 img
-{
+#footer #footerbox2 img{
     top:0px;
     margin-left:0px;
     max-height:100%;
     max-width:100%;
 }
-#footer #footerbox2 #galeriePhoto div.divPhoto
-{
+#footer #footerbox2 #galeriePhoto div.divPhoto{
     border: 2px solid grey;
     padding: 5px 5px 5px 5px;
     border-radius: 6px;
@@ -636,8 +634,150 @@ input[type=email]:focus{
     line-height:115px;
     margin:10px 2px 2px 2px;
 }
-#footer #footerbox2 #galeriePhoto div.divPhoto:hover
-{
+#footer #footerbox2 #galeriePhoto div.divPhoto:hover{
     border: 2px solid #008806;
     margin:12px 1px 0px 3px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTEZ-NOUS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#divContactTitle{
+    background: transparent url('/WebConcept/images/bottom_upper_bar.png') left top repeat;
+    max-height: 162px;
+    width:100%;
+    height:80px;
+    border:1px solid #383838;
+    max-width: 961px;
+    min-width: 310px;
+    margin: 81px auto 0 auto;
+    border-radius: 5px;
+}
+.floatingSeparatorContact {
+    width: 100%;
+    height: 147px;
+}
+#contactTitle{
+    padding: 0px;
+    font-size: 18px;
+    margin: 2px 0px 0px 9px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 38px;
+    width: 98%;
+}
+#contactTitleText{
+    padding: 0px;
+    font-size: 15px;
+    margin: 5px 0px 0px 9px;
+    font-family: 'Oswald', sans-serif;
+    color:grey;
+}
+#contactMapAndAdress{
+    margin: -27px 0px 0px 21px;
+}
+#contactMapAndAdressTitle{
+    padding:0px;
+    margin:0px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+#contactMap{
+    width:600px;
+    float:left;
+    margin: 20px 0px 0px 0px;
+}
+#contactAdress{
+    float:left;
+    width:290px;
+    margin:20px 0px 0px 18px;
+}
+.contactMap{
+    border:2px solid grey;
+    border-radius:3px;
+}
+#contactMap a{
+    text-decoration:none;
+
+}
+#imgAdress{
+    float:left;
+}
+.adress{
+    margin: 10px 0px 0px 102px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactPhone{
+    float: left;
+    width: 290px;
+    margin: 17px 0px 0px 10px;
+}
+#imgPhone{
+    float:left;
+}
+.phone{
+    margin: 17px 0px 0px 111px;
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactEmail{
+    float: left;
+    width: 290px;
+    margin: -4px 0px 0px 12px;
+}
+#imgEmail{
+    float:left;
+}
+.email{
+    margin: 33px 0px 0px 110px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactEmail a{
+    text-decoration:none;
+    color:white;
+}
+#contactEmail a:hover{
+    color:#008806;
+    text-decoration:underline;
+}
+.formFloatLeft{
+    float:left;
+
+}
+.formFloatRight{
+    float:right;
+}
+#contactForm{
+    width: 98%;
+    margin: 23px 0px 0px 21px;
+}
+.textCss{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.textCss:hover{
+
+    color: #008806;
+}
+#email:focus,
+#nom:focus,
+#telephone:focus{
+    color:white;
+    border:1px solid #008806;
+}
+.separatorLine{
+    background: transparent url('../images/seperator_line.png') left top repeat;
+    max-height: 3px;
+    width: 98%;
+    height: 3px;
+}
+#form{
+    width: 450px;
+    margin: 0px auto 0px auto;
 }
