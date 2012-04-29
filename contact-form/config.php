@@ -78,7 +78,7 @@ $form->addElement($email);
 
 /* PHONE */
 
-$phone = new iPhorm_Element('téléphone');
+$phone = new iPhorm_Element('telephone');
 $phone->addFilter('trim');
 $name->addValidator('required'); 
 $form->addElement($phone);
