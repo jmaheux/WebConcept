@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/home/a9276338/public_html/WebConcept/.htpasswd"
+Require valid-user

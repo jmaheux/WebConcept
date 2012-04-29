@@ -1,0 +1,643 @@
+/*
+    Document   : style
+    Created on : 2012-03-05, 12:00:00
+    Author     : Daniel Taillefer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CLASSES GÉNÉRALES @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+root {
+    display: block;
+}
+html {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /*        background: transparent url('/WebConcept/images/background3.jpg') center top no-repeat;*/
+    font-weight: 100;
+    /*        background-size: cover;*/
+    color: white;
+    min-height: 100%;
+    background: #010101 url('/WebConcept/images/background3.png') left top repeat;
+}
+.siteWidth {
+    width:100%;
+    max-width: 980px;
+    min-width: 310px;
+    margin: 0 auto 0 auto;
+
+}
+.innerSiteWidth {
+    width:100%;
+    max-width: 980px;
+    min-width: 269px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ TOP & BOTTOM BOXES @@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.topBoxWrapper {
+    width: 100%;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 2;
+}
+.bottomBoxWrapper {
+    width: 100%;
+    z-index: 2;
+    margin-top: -31px;
+}
+.topLeftCornerImageHolder {
+    background: transparent url('/WebConcept/images/top_left_corner.png') left top no-repeat;
+    width: 90%;
+}
+.topRightCornerImageHolder {
+    background: transparent url('/WebConcept/images/top_right_corner.png') right top no-repeat;
+}
+.bottomLeftCornerImageHolder {
+    background: transparent url('/WebConcept/images/bottom_left_corner.png') left bottom no-repeat;
+    height: 60px;
+    width: 90%;
+}
+.bottomRightCornerImageHolder {
+    background: transparent url('/WebConcept/images/bottom_right_corner.png') right bottom no-repeat;
+    padding-top: 1px;
+}
+.topGradientHolder {
+    background: transparent url('/WebConcept/images/top_gradient.png') left top repeat-x;
+    height: 60px;
+    border-top: 1px solid #141414;
+    margin: 0 10px;
+    width: auto;
+    margin-top: -31px;
+    position: relative;
+    z-index: 3;
+}
+.bottomGradientHolder {
+    background: transparent url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;
+    height: 60px;
+    border-bottom: 1px solid #141414;
+    margin: -60px 10px 0;
+    width: auto;
+    position: relative;
+    z-index: 3;
+}
+.topGradientBackground {
+    margin: 0 10px;
+    width: auto;
+    height: 31px;
+    background-color: rgba(5, 5, 5, 1);
+}
+.bottomGradientBackground {
+    margin: 29px 10px 0;
+    width: auto;
+    height: 32px;
+    background-color: rgba(5, 5, 5, 1);
+}
+.clear {
+    clear: both;
+}
+.fullWidth {
+    width: 100%;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#menuItemsWrapper {
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 980px;
+}
+#contact
+{
+    background: transparent url('/WebConcept/images/top_upper_bar.png') left top repeat-x;
+    height:42px;
+}
+#menu
+{
+    background: transparent url('/WebConcept/images/bottom_upper_bar.png') left top repeat;
+    max-height: 162px;
+}
+#logo
+{
+    position: relative;
+    max-height: 81px;
+    max-width: 200px;
+    width: 16%;
+    float: left;
+    min-width: 103px;
+    margin-top: -25px;
+    margin-right: 25px
+}
+#logo img {
+    width: 100%;
+    position: relative;
+}
+#slider
+{
+    height:400px;
+}
+#content
+{
+    background-color: rgba(5, 5, 5, 1);
+    padding-top: 1px;
+    border-width: 1px 0;
+    border-color: #141414;
+    border-style: solid;
+}
+.container {
+    position: relative;
+    margin: auto;
+    z-index: 4;
+    max-width: 980px;
+    min-width: 320px;
+    width: 90%;
+}
+#contentWrapper {
+    width: 100%;
+}
+.floatingSeparator {
+    width: 100%;
+    height: 100px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MENU @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#menu ul {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 81px;
+    max-height: 162px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    display: block;
+    padding: 0;
+    min-width: 320px;
+}
+#menu ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    margin-top: -1px;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+#menu ul li:first-child {
+    height: 100%;
+}
+#menu ul li .upperBorder {
+    width: 100%;
+    height: 1px;
+}
+#menu ul li .upperLeftBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperCenterLeftBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperCenterRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li .upperRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#menu ul li.selected a,
+#menu ul li:hover a {
+    color: #6DD145;
+}
+#menu ul li:hover{
+    background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -webkit-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -o-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: -ms-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+    background-image: radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
+}
+#menu ul li.selected .upperLeftBorder,
+#menu ul li:hover .upperLeftBorder,
+#footerbox1 .upperLeftBorder,
+#footerbox2 .upperLeftBorder,
+#footerbox3 .upperLeftBorder{
+    background-image: linear-gradient(left , #000000, #008806);
+    background-image: -o-linear-gradient(left , #000000, #008806);
+    background-image: -moz-linear-gradient(left , #000000, #008806);
+    background-image: -webkit-linear-gradient(left , #000000, #008806);
+    background-image: -ms-linear-gradient(left , #000000, #008806);
+    background-image: linear, left top, left bottom, from(#000000), to(#008806);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000,endColorstr=#008806,GradientType=1);
+}
+#menu ul li.selected .upperCenterLeftBorder,
+#menu ul li:hover .upperCenterLeftBorder,
+#footerbox1 .upperCenterLeftBorder,
+#footerbox2 .upperCenterLeftBorder,
+#footerbox3 .upperCenterLeftBorder{
+    background-image: linear-gradient(left, #008806, #6aa56d);
+    background-image: -o-linear-gradient(left, #008806, #6aa56d);
+    background-image: -moz-linear-gradient(left, #008806, #6aa56d);
+    background-image: -webkit-linear-gradient(left, #008806, #6aa56d);
+    background-image: -ms-linear-gradient(left, #008806, #6aa56d);
+    background-image: linear, left top, left bottom, from(#008806), to(#6aa56d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#6aa56d,GradientType=1);
+}
+#menu ul li.selected .upperCenterRightBorder,
+#menu ul li:hover .upperCenterRightBorder,
+#footerbox1 .upperCenterRightBorder,
+#footerbox2 .upperCenterRightBorder,
+#footerbox3 .upperCenterRightBorder {
+    background-image: linear-gradient(left, #6aa56d, #008806);
+    background-image: -o-linear-gradient(left, #6aa56d, #008806);
+    background-image: -moz-linear-gradient(left, #6aa56d, #008806);
+    background-image: -webkit-linear-gradient(left, #6aa56d, #008806);
+    background-image: -ms-linear-gradient(left, #6aa56d, #008806);
+    background-image: linear, left top, left bottom, from(#6aa56d), to(#008806);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6aa56d,endColorstr=#008806,GradientType=1);
+}
+#menu ul li.selected .upperRightBorder,
+#menu ul li:hover .upperRightBorder,
+#footerbox1 .upperRightBorder,
+#footerbox2 .upperRightBorder,
+#footerbox3 .upperRightBorder {
+    background-image: linear-gradient(left, #008806, #000000);
+    background-image: -o-linear-gradient(left, #008806, #000000);
+    background-image: -moz-linear-gradient(left, #008806, #000000);
+    background-image: -webkit-linear-gradient(left, #008806, #000000);
+    background-image: -ms-linear-gradient(left, #008806, #000000);
+    background-image: linear, left top, left bottom, from(#008806), to(#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#000000,GradientType=1);
+}
+#menu ul li .topShadow {
+    height: 81px;
+}
+#menu ul li .bottomShadow {
+    height: 81px;
+    padding: 0 26px;
+}
+@media screen and (max-width: 900px ) and (min-width: 801px;) {
+    #menu ul li .bottomShadow {
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 751px;) {
+    #menu ul li .bottomShadow {
+        padding: 0 13px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #menu ul li .bottomShadow {
+        padding: 0 9px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #menu ul {
+        width 450px;
+    }
+    #menuItemsWrapper {
+        max-width: 450px;
+    }
+    #menu ul li .bottomShadow {
+        padding: 0 28px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #menu ul li .bottomShadow {
+        padding: 0 8px;
+    }
+    #logo {
+        margin-right: 7px;
+    }
+    #menu ul {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 325px) {
+    #menuItemsWrapper {
+        max-width: 325px;
+    }
+    #menu ul {
+        width: 325px;
+    }
+}
+#menu ul li .leftBorder {
+    height: 81px;
+}
+#menu ul li .rightBorder {
+    height: 81px;
+}
+#menu ul li.selected .topShadow,
+#menu ul li:hover .topShadow{
+    background: transparent url('/WebConcept/images/top_border_shadow.png') left top repeat-x;
+}
+#menu ul li.selected .bottomShadow,
+#menu ul li:hover .bottomShadow {
+    background: transparent url('/WebConcept/images/bottom_border_shadow.png') left bottom repeat-x;
+}
+#menu ul li.selected .leftBorder,
+#menu ul li:hover .leftBorder {
+    background: transparent url('/WebConcept/images/left_border_gradient.png') left top no-repeat;
+}
+#menu ul li.selected .rightBorder,
+#menu ul li:hover .rightBorder {
+    background: transparent url('/WebConcept/images/right_border_gradient.png') right top no-repeat;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#footer {
+
+}
+.footerWrapper {
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 980px;
+    height:100%;
+}
+#footerbox1 .upperBorder,
+#footerbox2 .upperBorder,
+#footerbox3 .upperBorder {
+    width: 100%;
+    height: 1px;
+}
+#footerbox1 .upperLeftBorder,
+#footerbox2 .upperLeftBorder,
+#footerbox3 .upperLeftBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#footerbox1 .upperCenterLeftBorder,
+#footerbox2 .upperCenterLeftBorder,
+#footerbox3 .upperCenterLeftBorder{
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#footerbox1 .upperCenterRightBorder,
+#footerbox2 .upperCenterRightBorder,
+#footerbox3 .upperCenterRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#footerbox1 .upperRightBorder,
+#footerbox2 .upperRightBorder,
+#footerbox3 .upperRightBorder {
+    float: left;
+    width: 25%;
+    height: 1px;
+}
+#footerbox1 {
+    width:30%;
+    float:left;
+    min-width:175px;
+}
+#footerbox2 {
+    width:30%;
+    float:left;
+    min-width:294px;
+}
+#footerbox3 {
+    width:30%;
+    float:left;
+    min-width:175px;
+}
+.boxmargin
+{
+    margin:0px 0px 40px 25px;
+}
+.titresFooter
+{
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    margin:0px 0px 5px 0px;
+    padding-top:0px;
+    text-align:center;
+}
+#footer ul li a {
+    text-decoration:none;
+    color:white;
+}
+#footer ul {
+    padding:0px 0px 0px 0px;
+    margin: 0px 0px 0px 7px;
+}
+#footer ul li{
+    font-family: 'Poiret One', cursive;
+    font-size: 19px;
+    list-style:none;
+    border-bottom:1px dotted grey;
+    line-height:33px;
+}
+#footer ul li:hover{
+    background-color:rgba(122,122,122,0.1);
+
+}
+#footer ul li p{
+    margin:0px 0px 0px 0px;
+    padding:0px;
+}
+#footer ul li p:hover{
+    margin-left:15px;
+    color:#6DD145;
+}
+#footerbox1 ul li,
+#footerbox1 ul li,
+#footerbox1 ul li {
+    min-width:175px;
+    height:35px;
+}
+#social{
+    height: 75px;
+    text-align:center;
+}
+.spansocial{
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+.spancreation{
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+.divSocialWidth{
+    width:50%;
+    float:left;
+    line-height:50px;
+    height:50px;
+    min-width:320px;
+}
+#footer img{
+    top:13px;
+    position:relative;
+    margin-left:5px;
+}
+#footer #social img:hover{
+    top:18px;
+
+}
+#social a{
+    text-decoration:none;
+    color:white;
+}
+#social a:hover{
+    color:#6DD145;
+}
+.imgBlogger{
+    top:11px !important;
+}
+.imgBlogger:hover{
+    top:16px !important;
+}
+#formName{
+    width:99%;
+    min-width:175px;
+    height:25px;
+}
+#formEmail{
+    width:99%;
+    min-width:175px;
+    height:25px;
+}
+#formMessage{
+    width:98%;
+    min-width:175px;
+    height:100px;
+}
+#accueilForm{
+
+    margin-top:10px;
+}
+input[type=text]{
+    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+    -moz-border-radius: 5px; /* FF1-3.6 */
+    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    color:white;
+    margin-bottom:5px;
+    border:1px solid #4d4d4d;
+    background-color:#1f1f1f;
+    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
+    font-family: 'Oswald', sans-serif;
+    font-size:16px;
+    outline:none;
+}
+input[type=email]{
+    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+    -moz-border-radius: 5px; /* FF1-3.6 */
+    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    background-color:#1f1f1f;
+    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
+    color:white;
+    margin-bottom:5px;
+    border:1px solid #4d4d4d;
+    font-family: 'Oswald', sans-serif;
+    font-size:16px;
+    outline:none;
+}
+input[type=submit]{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 146px;
+    text-align: left;
+    padding: 2px 0px 2px 20px;
+    background-color: #1F1F1F;
+    background-image: linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
+    background-image: -o-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
+    background-image: -moz-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
+    background-image: -webkit-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
+    background-image: -ms-linear-gradient(bottom, #1C1C1B 0%, #4A484A 47%, black 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4A484A), color-stop(0.47, #1C1C1B), color-stop(1, black));
+    color: grey;
+    font-size: 16px;
+    border-top: 1px solid grey;
+    border-radius: 18px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    height: 28px;
+    font-size: 19px;
+}
+#footer textarea{
+    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+    -moz-border-radius: 5px; /* FF1-3.6 */
+    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
+    background-color:#1f1f1f;
+    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
+    color:white;
+    border:1px solid #4d4d4d;
+    font-family: 'Oswald', sans-serif;
+    font-size:16px;
+    outline:none;
+}
+input[type=text]:focus{
+    color:#008806;
+    border:1px solid white;
+}
+input[type=email]:focus{
+    color:#008806;
+    border:1px solid white;
+}
+#footer textarea:focus{
+    color:#008806;
+    border:1px solid white;
+}
+#footer #footerbox2 img
+{
+    top:0px;
+    margin-left:0px;
+    max-height:100%;
+    max-width:100%;
+}
+#footer #footerbox2 #galeriePhoto div.divPhoto
+{
+    border: 2px solid grey;
+    padding: 5px 5px 5px 5px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    width:80px;
+    height:80px;
+    float:left;
+    text-align:center;
+    line-height:115px;
+    margin:10px 2px 2px 2px;
+}
+#footer #footerbox2 #galeriePhoto div.divPhoto:hover
+{
+    border: 2px solid #008806;
+    margin:12px 1px 0px 3px;
+}
