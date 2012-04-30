@@ -80,10 +80,10 @@ $temp->render();
                                             <!-- Begin Phone element -->
                                             <div class="element-wrapper phone-element-wrapper clearfix">
                                                 <div class="formFloatLeft">
-                                                    <label class="textCss"  for="téléphone">Téléphone</label>
+                                                    <label class="textCss"  for="telephone">Téléphone</label>
                                                 </div>
                                                 <div class="input-wrapper phone-input-wrapper formFloatRight">
-                                                    <input class="phone-element" id="telephone" type="text" name="téléphone" style="width:220px;"/>
+                                                    <input class="phone-element" id="telephone" type="text" name="telephone" style="width:220px;"/>
                                                 </div>
                                             </div>
                                             <div class="clear" style="float:none;"></div>
