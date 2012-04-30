@@ -146,3 +146,6 @@
     width: 450px;
     margin: 0px auto 0px auto;
 }
+#contactMapAndAdress.separatorLine{
+    margin-left:0px !important;
+}
