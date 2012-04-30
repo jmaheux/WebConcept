@@ -131,11 +131,8 @@
         </div>
     </div>
     <div class="floatingSeparatorContact">
-        <div id="divContactTitle">
-            <h1 id="contactTitle">Contactez-nous</h1>
-            <div class="separatorLine" style="margin-left:9px;"></div>
-            <h1 id="contactTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
-        </div>
+        <temp:contentPlaceHolder id="topFloatingBox">
+        </temp:contentPlaceHolder>
     </div>
     <div class="topBoxWrapper">
         <div class="topLeftCornerImageHolder siteWidth">

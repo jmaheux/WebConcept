@@ -1,0 +1,148 @@
+/*
+    Document   : contact
+    Created on : 2012-04-29, 19:54:14
+    Author     : James
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTEZ-NOUS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#topFloatingDiv {
+    background: black url('/WebConcept/images/bottom_upper_bar.png') left top repeat-x;
+    height: 110px;
+    border: 1px solid #3C3C3C;
+    max-width: 961px;
+    min-width: 310px;
+    margin: 40px auto 0 auto;
+    border-radius: 5px;
+}
+.floatingSeparator {
+    width: 100%;
+    height: 165px;
+}
+#contactTitle{
+    padding: 0px;
+    font-size: 18px;
+    margin: 6px 0px 0px 20px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 49px;
+    width: 98%;
+}
+#contactTitleText{
+    padding: 0px;
+    font-size: 12px;
+    margin: 14px 0px 0px 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #5A5A5A;
+
+}
+#contactMapAndAdress{
+    margin: -27px 0px 0px 21px;
+}
+#contactMapAndAdressTitle{
+    padding:0px;
+    margin:0px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+#contactMap{
+    width:600px;
+    float:left;
+    margin: 20px 0px 0px 0px;
+}
+#contactAdress{
+    float:left;
+    width:290px;
+    margin:20px 0px 0px 18px;
+}
+.contactMap{
+    border:2px solid grey;
+    border-radius:3px;
+}
+#contactMap a{
+    text-decoration:none;
+
+}
+#imgAdress{
+    float:left;
+}
+.adress{
+    margin: 10px 0px 0px 102px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactPhone{
+    float: left;
+    width: 290px;
+    margin: 17px 0px 0px 10px;
+}
+#imgPhone{
+    float:left;
+}
+.phone{
+    margin: 17px 0px 0px 111px;
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactEmail{
+    float: left;
+    width: 290px;
+    margin: -4px 0px 0px 12px;
+}
+#imgEmail{
+    float:left;
+}
+.email{
+    margin: 33px 0px 0px 110px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#contactEmail a{
+    text-decoration:none;
+    color:white;
+}
+#contactEmail a:hover{
+    color:#008806;
+    text-decoration:underline;
+}
+.formFloatLeft{
+    float:left;
+
+}
+.formFloatRight{
+    float:right;
+}
+#contactForm{
+    width: 98%;
+    margin: 23px 0px 0px 21px;
+}
+.textCss{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+.textCss:hover{
+
+    color: #008806;
+}
+#email:focus,
+#nom:focus,
+#telephone:focus{
+    color:white;
+    border:1px solid #008806;
+}
+#form{
+    width: 450px;
+    margin: 0px auto 0px auto;
+}
