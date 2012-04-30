@@ -198,26 +198,26 @@ body {
 #menu ul li:first-child {
     height: 100%;
 }
-#menu ul li .upperBorder {
+.upperBorder {
     width: 100%;
     height: 1px;
 }
-#menu ul li .upperLeftBorder {
+.upperLeftBorder {
     float: left;
     width: 25%;
     height: 1px;
 }
-#menu ul li .upperCenterLeftBorder {
+.upperCenterLeftBorder {
     float: left;
     width: 25%;
     height: 1px;
 }
-#menu ul li .upperCenterRightBorder {
+.upperCenterRightBorder {
     float: left;
     width: 25%;
     height: 1px;
 }
-#menu ul li .upperRightBorder {
+.upperRightBorder {
     float: left;
     width: 25%;
     height: 1px;
@@ -233,11 +233,7 @@ body {
     background-image: -ms-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
     background-image: radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
 }
-#menu ul li.selected .upperLeftBorder,
-#menu ul li:hover .upperLeftBorder,
-#footerbox1 .upperLeftBorder,
-#footerbox2 .upperLeftBorder,
-#footerbox3 .upperLeftBorder{
+.upperLeftBorder{
     background-image: linear-gradient(left , #000000, #008806);
     background-image: -o-linear-gradient(left , #000000, #008806);
     background-image: -moz-linear-gradient(left , #000000, #008806);
@@ -246,11 +242,7 @@ body {
     background-image: linear, left top, left bottom, from(#000000), to(#008806);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000000,endColorstr=#008806,GradientType=1);
 }
-#menu ul li.selected .upperCenterLeftBorder,
-#menu ul li:hover .upperCenterLeftBorder,
-#footerbox1 .upperCenterLeftBorder,
-#footerbox2 .upperCenterLeftBorder,
-#footerbox3 .upperCenterLeftBorder{
+.upperCenterLeftBorder{
     background-image: linear-gradient(left, #008806, #6aa56d);
     background-image: -o-linear-gradient(left, #008806, #6aa56d);
     background-image: -moz-linear-gradient(left, #008806, #6aa56d);
@@ -259,11 +251,7 @@ body {
     background-image: linear, left top, left bottom, from(#008806), to(#6aa56d);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#008806,endColorstr=#6aa56d,GradientType=1);
 }
-#menu ul li.selected .upperCenterRightBorder,
-#menu ul li:hover .upperCenterRightBorder,
-#footerbox1 .upperCenterRightBorder,
-#footerbox2 .upperCenterRightBorder,
-#footerbox3 .upperCenterRightBorder {
+.upperCenterRightBorder {
     background-image: linear-gradient(left, #6aa56d, #008806);
     background-image: -o-linear-gradient(left, #6aa56d, #008806);
     background-image: -moz-linear-gradient(left, #6aa56d, #008806);
@@ -272,11 +260,7 @@ body {
     background-image: linear, left top, left bottom, from(#6aa56d), to(#008806);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6aa56d,endColorstr=#008806,GradientType=1);
 }
-#menu ul li.selected .upperRightBorder,
-#menu ul li:hover .upperRightBorder,
-#footerbox1 .upperRightBorder,
-#footerbox2 .upperRightBorder,
-#footerbox3 .upperRightBorder {
+.upperRightBorder {
     background-image: linear-gradient(left, #008806, #000000);
     background-image: -o-linear-gradient(left, #008806, #000000);
     background-image: -moz-linear-gradient(left, #008806, #000000);
@@ -372,40 +356,6 @@ body {
     white-space: nowrap;
     max-width: 980px;
     height:100%;
-}
-#footerbox1 .upperBorder,
-#footerbox2 .upperBorder,
-#footerbox3 .upperBorder {
-    width: 100%;
-    height: 1px;
-}
-#footerbox1 .upperLeftBorder,
-#footerbox2 .upperLeftBorder,
-#footerbox3 .upperLeftBorder {
-    float: left;
-    width: 25%;
-    height: 1px;
-}
-#footerbox1 .upperCenterLeftBorder,
-#footerbox2 .upperCenterLeftBorder,
-#footerbox3 .upperCenterLeftBorder{
-    float: left;
-    width: 25%;
-    height: 1px;
-}
-#footerbox1 .upperCenterRightBorder,
-#footerbox2 .upperCenterRightBorder,
-#footerbox3 .upperCenterRightBorder {
-    float: left;
-    width: 25%;
-    height: 1px;
-}
-#footerbox1 .upperRightBorder,
-#footerbox2 .upperRightBorder,
-#footerbox3 .upperRightBorder {
-    float: left;
-    width: 25%;
-    height: 1px;
 }
 #footerbox1 {
     width:30%;
@@ -655,4 +605,22 @@ body {
     min-width: 310px;
     margin: 40px auto 0 auto;
     border-radius: 5px;
+    box-shadow: 15px 15px 15px black;
+}
+#topFloatingTitle{
+    padding: 0px;
+    font-size: 27px;
+    margin: 6px 0px 0px 20px;
+    line-height: 49px;
+    width: 98%;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+}
+#topFloatingTitleText{
+    padding: 0px;
+    font-size: 15px;
+    margin: 14px 0px 0px 20px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color: #5A5A5A;
 }

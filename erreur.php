@@ -132,14 +132,15 @@ if ($title == false || strlen($status) != 3)
     <body>
 
         <div id="container">
-            <h1><?php echo $code; ?></h1>
+            <h1 id="errorCode"><?php echo $code; ?></h1>
+            <div id="codeHolder"></div>
             <div class="upperBorder topBorder">
                 <div class="upperLeftBorder"></div>
                 <div class="upperCenterLeftBorder"></div>
                 <div class="upperCenterRightBorder"></div>
                 <div class="upperRightBorder"></div>
             </div>
-            <h2><?php echo $title; ?></h2>
+            <h2 id="errorTitle"><?php echo $title; ?></h2>
             <div id="holder"></div>
             <div class="upperBorder">
                 <div class="upperLeftBorder"></div>
@@ -149,18 +150,35 @@ if ($title == false || strlen($status) != 3)
             </div>
         </div>
         <script type="text/javascript" src="js/raphael-min.js"></script>
-        <script type="text/javascript" src="js/bebas_raphael.font.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript">
             window.onload = function(){
-                var r = Raphael("holder", 300, 60);
-                //                r.print(1, 1, "<?php echo $code; ?>", r.getFont("Oswald"), 60).attr({
-                //                    fill: "90-#313131:20-#313131:300",
-                //                    stroke: "none",
-                //                    opacity: 1,
-                //                    "fill-opacity": 0
-                //                });
-                r.print(1, 20, "<?php echo $title; ?>", r.getFont("bebas"), 60).attr({
-                    gradient: "0-#fff-#f00:20-#000"
+                var codeContainerWidth = $('#errorCode').width() + 50;
+                var codeContainerHeight = $('#errorCode').height();
+                $('#errorCode').hide();
+                var codeTextPositionX = codeContainerWidth / 2;
+                var codeTextPositionY = codeContainerHeight / 2;
+                var x = Raphael("codeHolder", codeContainerWidth, codeContainerHeight);
+                x.text(codeTextPositionX, codeTextPositionY, "<?php echo $code; ?>").attr({
+                    fill: "90-#000:0-#008000:50-#fff:100",
+                    'fill-opacity': 0.8,
+                    'font-size': 185,
+                    'font-family':'Oswald, sans-serif',
+                    'font-weight':'bold'
+                });
+
+                var containerWidth = $('#errorTitle').width() + 50;
+                var containerHeight = $('#errorTitle').height();
+                $('#errorTitle').hide();
+                var textPositionX = containerWidth / 2;
+                var textPositionY = containerHeight / 2;
+                var r = Raphael("holder", containerWidth, containerHeight);
+                r.text(textPositionX, textPositionY, "<?php echo $title; ?>").attr({
+                    fill: "90-#000-#fff",
+                    'fill-opacity': 0.8,
+                    'font-size': 42,
+                    'font-family':'Oswald, sans-serif',
+                    'font-weight':'bold'
                 });
             };
         </script>

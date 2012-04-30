@@ -1,0 +1,61 @@
+/*
+    Document   : about.css
+    Created on : 2012-04-29, 22:20:10
+    Author     : James Maheux
+    Description:
+        This stylesheet contains the styles used specifically for about.php
+*/
+
+.floatingSeparator {
+    width: 100%;
+    height: 165px;
+}
+.grey .upperLeftBorder{
+    background-image: linear-gradient(left , rgba(51, 51, 51, 0), rgba(51, 51, 51, 1));
+    background-image: -o-linear-gradient(left , rgba(51, 51, 51, 0), rgba(51, 51, 51, 1));
+    background-image: -moz-linear-gradient(left , rgba(51, 51, 51, 0), rgba(51, 51, 51, 1));
+    background-image: -webkit-linear-gradient(left , rgba(51, 51, 51, 0), rgba(51, 51, 51, 1));
+    background-image: -ms-linear-gradient(left , rgba(51, 51, 51, 0), rgba(51, 51, 51, 1));
+    background-image: linear, left top, left bottom, from(rgba(51, 51, 51, 0)), to(rgba(51, 51, 51, 1));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00333333,endColorstr=#FF333333,GradientType=1);
+}
+.grey .upperCenterLeftBorder{
+    background-image: linear-gradient(left, #333333, #959595);
+    background-image: -o-linear-gradient(left, #333333, #959595);
+    background-image: -moz-linear-gradient(left, #333333, #959595);
+    background-image: -webkit-linear-gradient(left, #333333, #959595);
+    background-image: -ms-linear-gradient(left, #333333, #959595);
+    background-image: linear, left top, left bottom, from(#333333), to(#959595);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#333333,endColorstr=#959595,GradientType=1);
+}
+.grey .upperCenterRightBorder {
+    background-image: linear-gradient(left, #959595, #333333);
+    background-image: -o-linear-gradient(left, #959595, #333333);
+    background-image: -moz-linear-gradient(left, #959595, #333333);
+    background-image: -webkit-linear-gradient(left, #959595, #333333);
+    background-image: -ms-linear-gradient(left, #959595, #333333);
+    background-image: linear, left top, left bottom, from(#959595), to(#333333);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#959595,endColorstr=#333333,GradientType=1);
+}
+.grey .upperRightBorder {
+    background-image: linear-gradient(left, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: -o-linear-gradient(left, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: -moz-linear-gradient(left, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: -webkit-linear-gradient(left, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: -ms-linear-gradient(left, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0));
+    background-image: linear, left top, left bottom, from(rgba(51, 51, 51, 1)), to(rgba(51, 51, 51, 0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF333333,endColorstr=#00333333,GradientType=1);
+}
+#rightPartHeader {
+    height: 50px;
+    width: 290px;
+    float: left;
+    border-top: 1px solid #333333;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: black url('../images/right_part_header_background.png') left top repeat-x;
+}
