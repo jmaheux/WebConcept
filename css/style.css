@@ -23,7 +23,7 @@ body {
     /*        background-size: cover;*/
     color: white;
     min-height: 100%;
-    background: #010101 url('/WebConcept/images/background3.png') left top repeat;
+    background: #010101 url('../images/background3.png') left top repeat;
 }
 .siteWidth {
     width:100%;
@@ -54,48 +54,62 @@ body {
     margin-top: -31px;
 }
 .topLeftCornerImageHolder {
-    background: transparent url('/WebConcept/images/top_left_corner.png') left top no-repeat;
+    background: transparent url('../images/top_left_corner.png') left top no-repeat;
     width: 90%;
 }
 .topRightCornerImageHolder {
-    background: transparent url('/WebConcept/images/top_right_corner.png') right top no-repeat;
+    background: transparent url('../images/top_right_corner.png') right top no-repeat;
 }
 .bottomLeftCornerImageHolder {
-    background: transparent url('/WebConcept/images/bottom_left_corner.png') left bottom no-repeat;
+    background: transparent url('../images/bottom_left_corner.png') left bottom no-repeat;
     height: 60px;
     width: 90%;
 }
 .bottomRightCornerImageHolder {
-    background: transparent url('/WebConcept/images/bottom_right_corner.png') right bottom no-repeat;
+    background: transparent url('../images/bottom_right_corner.png') right bottom no-repeat;
     padding-top: 1px;
 }
 .topGradientHolder {
-    background: transparent url('/WebConcept/images/top_gradient.png') left top repeat-x;
+    background: transparent url('../images/top_gradient.png') left top repeat-x;
     height: 60px;
     border-top: 1px solid #141414;
-    margin: 0 10px;
+    margin: 0 7px;
     width: auto;
     margin-top: -31px;
     position: relative;
     z-index: 3;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid #3c3c3c;
 }
 .bottomGradientHolder {
-    background: transparent url('/WebConcept/images/bottom_gradient.png') left bottom repeat-x;
+    background: transparent url('../images/bottom_gradient.png') left bottom repeat-x;
     height: 60px;
     border-bottom: 1px solid #141414;
-    margin: -60px 10px 0;
+    margin: -60px 7px 0;
     width: auto;
     position: relative;
     z-index: 3;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid #3c3c3c;
 }
 .topGradientBackground {
-    margin: 0 10px;
+    margin: 0 9px;
     width: auto;
     height: 31px;
     background-color: rgba(5, 5, 5, 1);
 }
 .bottomGradientBackground {
-    margin: 29px 10px 0;
+    margin: 29px 9px 0;
     width: auto;
     height: 32px;
     background-color: rgba(5, 5, 5, 1);
@@ -117,13 +131,16 @@ body {
 }
 #contact
 {
-    background: transparent url('/WebConcept/images/top_upper_bar.png') left top repeat-x;
+    background: transparent url('../images/top_upper_bar.png') left top repeat-x;
     height:42px;
 }
 #menu
 {
-    background: transparent url('/WebConcept/images/bottom_upper_bar.png') left top repeat;
+    background: transparent url('../images/bottom_upper_bar.png') left top repeat;
     max-height: 162px;
+    -moz-box-shadow: 0px 0px 16px #111111;
+    -webkit-box-shadow: 0px 0px 16px #111111;
+    box-shadow: 0px 0px 16px #111111;
 }
 #logo
 {
@@ -150,7 +167,7 @@ body {
     background-color: rgba(5, 5, 5, 1);
     padding-top: 1px;
     border-width: 1px 0;
-    border-color: #141414;
+    border-color: #3c3c3c;
     border-style: solid;
 }
 .container {
@@ -225,6 +242,19 @@ body {
 #menu ul li.selected a,
 #menu ul li:hover a {
     color: #6DD145;
+}
+#menu ul li .upperBorder {
+    filter: alpha(opacity=0); /* internet explorer */
+    -khtml-opacity: 0;      /* khtml, old safari */
+    -moz-opacity: 0;       /* mozilla, netscape */
+    opacity: 0;           /* fx, safari, opera */
+}
+#menu ul li.selected .upperBorder,
+#menu ul li:hover .upperBorder {
+    filter: alpha(opacity=100); /* internet explorer */
+    -khtml-opacity: 1;      /* khtml, old safari */
+    -moz-opacity: 1;       /* mozilla, netscape */
+    opacity: 1;           /* fx, safari, opera */
 }
 #menu ul li:hover{
     background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
@@ -329,19 +359,19 @@ body {
 }
 #menu ul li.selected .topShadow,
 #menu ul li:hover .topShadow{
-    background: transparent url('/WebConcept/images/top_border_shadow.png') left top repeat-x;
+    background: transparent url('../images/top_border_shadow.png') left top repeat-x;
 }
 #menu ul li.selected .bottomShadow,
 #menu ul li:hover .bottomShadow {
-    background: transparent url('/WebConcept/images/bottom_border_shadow.png') left bottom repeat-x;
+    background: transparent url('../images/bottom_border_shadow.png') left bottom repeat-x;
 }
 #menu ul li.selected .leftBorder,
 #menu ul li:hover .leftBorder {
-    background: transparent url('/WebConcept/images/left_border_gradient.png') left top no-repeat;
+    background: transparent url('../images/left_border_gradient.png') left top no-repeat;
 }
 #menu ul li.selected .rightBorder,
 #menu ul li:hover .rightBorder {
-    background: transparent url('/WebConcept/images/right_border_gradient.png') right top no-repeat;
+    background: transparent url('../images/right_border_gradient.png') right top no-repeat;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -598,13 +628,15 @@ body {
     margin-left: 20px;
 }
 #topFloatingDiv {
-    background: black url('/WebConcept/images/bottom_upper_bar.png') left top repeat-x;
+    background: black url('../images/bottom_upper_bar.png') left top repeat-x;
     height: 110px;
     border: 1px solid #3C3C3C;
     max-width: 961px;
     min-width: 310px;
     margin: 40px auto 0 auto;
     border-radius: 5px;
+    -moz-box-shadow: 15px 15px 15px black;
+    -webkit-box-shadow: 15px 15px 15px black;
     box-shadow: 15px 15px 15px black;
 }
 #topFloatingTitle{
