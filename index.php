@@ -6,7 +6,6 @@ $temp->render();
 <temp:templateContent xmlns:temp="http://templates"
                       xmlns="http://www.w3.org/1999/xhtml">
     <temp:contentPlaceHolder id="head">
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One|Righteous' rel='stylesheet' type='text/css'/>
         <link rel="stylesheet" href="css/index.css" />
     </temp:contentPlaceHolder>
 

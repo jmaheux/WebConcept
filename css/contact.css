@@ -30,17 +30,17 @@
 }
 #contactTitle{
     padding: 0px;
-    font-size: 18px;
+    font-size: 27px;
     margin: 6px 0px 0px 20px;
-    font-family: 'Oswald', sans-serif;
     line-height: 49px;
     width: 98%;
+    font-family: 'Poiret One', cursive;
 }
 #contactTitleText{
     padding: 0px;
     font-size: 12px;
     margin: 14px 0px 0px 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poiret One', cursive;
     color: #5A5A5A;
 
 }
