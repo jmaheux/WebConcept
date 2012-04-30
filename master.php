@@ -131,6 +131,8 @@
         </div>
     </div>
     <div class="floatingSeparator">
+        <temp:contentPlaceHolder id="topFloatingBox">
+        </temp:contentPlaceHolder>
     </div>
     <div class="topBoxWrapper">
         <div class="topLeftCornerImageHolder siteWidth">

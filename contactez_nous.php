@@ -1,15 +1,17 @@
 <?php
 require_once './classes/template.php';
-$temp = new template("master_contact.php");
+$temp = new template("master.php");
 $temp->render();
 ?>
 <temp:templateContent xmlns:temp="http://templates"
                       xmlns="http://www.w3.org/1999/xhtml">
     <temp:contentPlaceHolder id="head">
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
         <link rel="stylesheet" type="text/css" href="contact-form/css/standard.css" /><!-- Contact form styles -->
         <script type="text/javascript" src="contact-form/js/plugins.js"></script>
         <script type="text/javascript" src="contact-form/js/iphorm.js"></script>
         <script type="text/javascript" src="contact-form/js/scripts.js"></script>
+
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="script">
@@ -18,6 +20,14 @@ $temp->render();
                 $('#menu ul li:eq(4)').addClass('selected');
             });
         </script>
+    </temp:contentPlaceHolder>
+
+    <temp:contentPlaceHolder id="topFloatingBox">
+        <div id="topFloatingDiv">
+            <h1 id="contactTitle">Contactez-nous</h1>
+            <div class="separatorLine" style="margin-left:9px;"></div>
+            <h1 id="contactTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
+        </div>
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="content">
@@ -44,7 +54,7 @@ $temp->render();
                 </div>
                 <div class="clear" style="float:none;"></div>
             </div>
-            
+
             <div id="contactForm">
                 <h1 id="contactMapAndAdressTitle">Formulaire</h1>
                 <div class="separatorLine"></div>
@@ -57,7 +67,7 @@ $temp->render();
                                     <div class="iphorm-message"></div>
                                     <div class="iphorm-container clearfix">
                                         <!-- Begin Name element -->
-                                        <div class="contact_gauche">	
+                                        <div class="contact_gauche">
                                             <div class="element-wrapper name-element-wrapper clearfix">
                                                 <div class="formFloatLeft">
                                                     <label class="textCss" for="nom">Nom</label>
