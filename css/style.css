@@ -94,6 +94,13 @@ body {
     width: auto;
     position: relative;
     z-index: 3;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid #3c3c3c;
 }
 .topGradientBackground {
     margin: 0 9px;
@@ -235,6 +242,19 @@ body {
 #menu ul li.selected a,
 #menu ul li:hover a {
     color: #6DD145;
+}
+#menu ul li .upperBorder {
+    filter: alpha(opacity=0); /* internet explorer */
+    -khtml-opacity: 0;      /* khtml, old safari */
+    -moz-opacity: 0;       /* mozilla, netscape */
+    opacity: 0;           /* fx, safari, opera */
+}
+#menu ul li.selected .upperBorder,
+#menu ul li:hover .upperBorder {
+    filter: alpha(opacity=100); /* internet explorer */
+    -khtml-opacity: 1;      /* khtml, old safari */
+    -moz-opacity: 1;       /* mozilla, netscape */
+    opacity: 1;           /* fx, safari, opera */
 }
 #menu ul li:hover{
     background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);

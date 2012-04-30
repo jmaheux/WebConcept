@@ -70,7 +70,9 @@ $temp->render();
                         <div class="upperRightBorder"></div>
                     </div>
                     <div class="rightPartLine firstLine">
-                        <div class="portraitHolder"></div>
+                        <div class="portraitHolder">
+                            <img alt="James Maheux" src="./images/portrait_james.png" />
+                        </div>
                         <div class="fullName">James Maheux</div>
                         <div class="fullTitle">Dieu tout puissant</div>
                         <div class="iconsHolder">
@@ -80,7 +82,9 @@ $temp->render();
                         </div>
                     </div>
                     <div class="rightPartLine">
-                        <div class="portraitHolder"></div>
+                        <div class="portraitHolder">
+                            <img alt="Daniel Taillefer" src="./images/portrait_dan.png" />
+                        </div>
                         <div class="fullName">Daniel Taillefer</div>
                         <div class="fullTitle">Marie-Madeleine</div>
                         <div class="iconsHolder">
@@ -90,7 +94,9 @@ $temp->render();
                         </div>
                     </div>
                     <div class="rightPartLine">
-                        <div class="portraitHolder"></div>
+                        <div class="portraitHolder">
+                            <img alt="Philippe de Massia" src="./images/portrait_phil.png" />
+                        </div>
                         <div class="fullName">Philippe de Massia</div>
                         <div class="fullTitle">Pécheur</div>
                         <div class="iconsHolder">
