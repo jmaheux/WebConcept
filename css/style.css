@@ -106,13 +106,13 @@ body {
     margin: 0 9px;
     width: auto;
     height: 31px;
-    background-color: rgba(5, 5, 5, 1);
+    background-color: rgba(5, 5, 7, 1);
 }
 .bottomGradientBackground {
     margin: 29px 9px 0;
     width: auto;
     height: 32px;
-    background-color: rgba(5, 5, 5, 1);
+    background-color: rgba(5, 5, 7, 1);
 }
 .clear {
     clear: both;
@@ -164,7 +164,7 @@ body {
 }
 #content
 {
-    background-color: rgba(5, 5, 5, 1);
+    background-color: rgba(5, 5, 6, 1);
     padding-top: 1px;
     border-width: 1px 0;
     border-color: #3c3c3c;
@@ -508,92 +508,58 @@ body {
     margin-top:10px;
 }
 #formName{
-    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
-    -moz-border-radius: 5px; /* FF1-3.6 */
-    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-    color:white;
-    margin-bottom:5px;
-    border:1px solid #4d4d4d;
-    background-color:#1f1f1f;
-    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
-    font-family: 'Oswald', sans-serif;
-    font-size:16px;
-    outline:none;
+
 }
-#formEmail{
-    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
-    -moz-border-radius: 5px; /* FF1-3.6 */
-    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-    background-color:#1f1f1f;
-    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
-    color:white;
-    margin-bottom:5px;
-    border:1px solid #4d4d4d;
-    font-family: 'Oswald', sans-serif;
-    font-size:16px;
-    outline:none;
-}
-#formButton{
+input,
+textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-top: 10px;
-    width: 146px;
-    text-align: left;
-    padding: 2px 0px 2px 20px;
+    color: #888;
+    margin-bottom: 5px;
+    border: 1px solid #444;
     background-color: #1F1F1F;
-    background-image: linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
-    background-image: -o-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
-    background-image: -moz-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
-    background-image: -webkit-linear-gradient(bottom, #4A484A 0%, #1C1C1B 47%, black 100%);
-    background-image: -ms-linear-gradient(bottom, #1C1C1B 0%, #4A484A 47%, black 100%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4A484A), color-stop(0.47, #1C1C1B), color-stop(1, black));
-    color: grey;
-    font-size: 16px;
-    border-top: 1px solid grey;
-    border-radius: 18px;
-    border-left: none;
-    border-bottom: none;
-    border-right: none;
-    height: 28px;
-    font-size: 19px;
+    background-image: linear-gradient(bottom, #333 0%, #0D0D0D 57%, #0D0D0D 100%);
+    background-image: -o-linear-gradient(bottom, #333 0%, #0D0D0D 57%, #0D0D0D 100%);
+    background-image: -moz-linear-gradient(bottom, #333 0%, #0D0D0D 57%, #0D0D0D 100%);
+    background-image: -webkit-linear-gradient(bottom, #333 0%, #0D0D0D 57%, #0D0D0D 100%);
+    background-image: -ms-linear-gradient(bottom, #333 0%, #0D0D0D 57%, #0D0D0D 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333), color-stop(0.57, #0D0D0D), color-stop(1, #0D0D0D));
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    padding: 0 7px;
+    font-weight: 300;
 }
-#footer textarea{
-    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
-    -moz-border-radius: 5px; /* FF1-3.6 */
-    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-    background-color:#1f1f1f;
-    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
-    color:white;
-    border:1px solid #4d4d4d;
-    font-family: 'Oswald', sans-serif;
-    font-size:16px;
-    outline:none;
+#formEmail{
+
 }
-#formName:focus{
-    color:#008806;
-    border:1px solid white;
+input[type="submit"],
+input[type="button"] {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    text-align: left;
+    padding: 5px 45px 6px 13px;
+    color: #555560;
+    border: none;
+    border-top: 1px solid #555560;
+    font-size: 12px;
+    background-image: linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
+    background-image: -o-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
+    background-image: -moz-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
+    background-image: -webkit-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
+    background-image: -ms-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0C0C0C), color-stop(0.62, #171717), color-stop(1, #333));
+    text-transform: uppercase;
+    font-weight: bold;
 }
-#formEmail:focus{
-    color:#008806;
-    border:1px solid white;
+textarea {
+    padding: 7px;
 }
-#footer textarea:focus{
+input:focus,
+textarea:focus {
     color:#008806;
     border:1px solid white;
 }
