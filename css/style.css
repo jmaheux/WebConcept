@@ -542,10 +542,10 @@ input[type="button"] {
     margin-top: 10px;
     text-align: left;
     padding: 5px 45px 6px 13px;
-    color: #555560;
+    color: #555559;
     border: none;
-    border-top: 1px solid #555560;
-    font-size: 12px;
+    border-top: 1px solid #555559;
+    font-size: 11px;
     background-image: linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
     background-image: -o-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
     background-image: -moz-linear-gradient(bottom, #0C0C0C 0%, #171717 42%, #333 100%);
