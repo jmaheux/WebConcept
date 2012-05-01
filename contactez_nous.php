@@ -24,9 +24,9 @@ $temp->render();
 
     <temp:contentPlaceHolder id="topFloatingBox">
         <div id="topFloatingDiv">
-            <h1 id="topFloatingTitle">Contactez-nous</h1>
-            <div class="separatorLine" style="margin-left:9px;"></div>
-            <h1 id="topFloatingTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
+            <h1 id="contactTitle">Contactez-nous</h1>
+            <div class="separatorLine"></div>
+            <h1 id="contactTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
         </div>
     </temp:contentPlaceHolder>
 
