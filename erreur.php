@@ -42,6 +42,10 @@ if ($title == false || strlen($status) != 3)
         <title>Erreur <?php echo $status; ?></title>
         <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
         <style type="text/css">
+            #titleHolder {
+                display: table;
+                margin: auto;
+            }
             html {
                 height: 100%;
             }
@@ -126,6 +130,10 @@ if ($title == false || strlen($status) != 3)
             .topBorder {
                 margin-top: -34px;
             }
+            svg {
+                margin: auto;
+                display: block;
+            }
         </style>
 
     </head>
@@ -134,19 +142,21 @@ if ($title == false || strlen($status) != 3)
         <div id="container">
             <h1 id="errorCode"><?php echo $code; ?></h1>
             <div id="codeHolder"></div>
-            <div class="upperBorder topBorder">
-                <div class="upperLeftBorder"></div>
-                <div class="upperCenterLeftBorder"></div>
-                <div class="upperCenterRightBorder"></div>
-                <div class="upperRightBorder"></div>
-            </div>
-            <h2 id="errorTitle"><?php echo $title; ?></h2>
-            <div id="holder"></div>
-            <div class="upperBorder">
-                <div class="upperLeftBorder"></div>
-                <div class="upperCenterLeftBorder"></div>
-                <div class="upperCenterRightBorder"></div>
-                <div class="upperRightBorder"></div>
+            <div id="titleHolder">
+                <div class="upperBorder topBorder">
+                    <div class="upperLeftBorder"></div>
+                    <div class="upperCenterLeftBorder"></div>
+                    <div class="upperCenterRightBorder"></div>
+                    <div class="upperRightBorder"></div>
+                </div>
+                <h2 id="errorTitle"><?php echo $title; ?></h2>
+                <div id="holder"></div>
+                <div class="upperBorder">
+                    <div class="upperLeftBorder"></div>
+                    <div class="upperCenterLeftBorder"></div>
+                    <div class="upperCenterRightBorder"></div>
+                    <div class="upperRightBorder"></div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="js/raphael-min.js"></script>
@@ -167,14 +177,14 @@ if ($title == false || strlen($status) != 3)
                     'font-weight':'bold'
                 });
 
-                var containerWidth = $('#errorTitle').width() + 50;
+                var containerWidth = $('#errorTitle').width() + 30;
                 var containerHeight = $('#errorTitle').height();
                 $('#errorTitle').hide();
                 var textPositionX = containerWidth / 2;
                 var textPositionY = containerHeight / 2;
                 var r = Raphael("holder", containerWidth, containerHeight);
                 r.text(textPositionX, textPositionY, "<?php echo $title; ?>").attr({
-                    fill: "90-#000-#fff",
+                    fill: "90-#000:0-#888:50-#bbb",
                     'fill-opacity': 0.8,
                     'font-size': 42,
                     'font-family':'Oswald, sans-serif',

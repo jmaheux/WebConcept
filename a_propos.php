@@ -19,7 +19,7 @@ $temp->render();
 
     <temp:contentPlaceHolder id="topFloatingBox">
         <div id="topFloatingDiv">
-            <h1 id="topFloatingTitle"> propos de Web Concept</h1>
+            <h1 id="topFloatingTitle">À propos de Web Concept</h1>
             <div class="separatorLine" style="margin-left:9px;"></div>
             <h1 id="topFloatingTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
         </div>
