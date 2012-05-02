@@ -102,7 +102,7 @@ $temp->render();
                                             <div class="element-wrapper message-element-wrapper clearfix" style="margin: -10px 0 10px 0px;">
                                                 <p class="titre_contact"></p>
                                                 <div class="input-wrapper message-input-wrapper clearfix">
-                                                    <textarea style="width:421px; height:150px;" class="message-element" id="message" name="message" rows="7" cols="25"></textarea>
+                                                    <textarea style="width: 411px; height:150px;" class="message-element" id="message" name="message" rows="7" cols="25"></textarea>
                                                 </div>
                                             </div>
                                             <div class="clear" style="float:none;"></div>

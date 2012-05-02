@@ -14,22 +14,6 @@
 /* INPUT, SELECT, and TEXTAREA
 /*---------------------------------------------------------------*/
 .iphorm-inner .input-wrapper input,.iphorm-inner .input-wrapper select,.iphorm-inner .input-wrapper textarea{
-    -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
-    -moz-border-radius: 5px; /* FF1-3.6 */
-    border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
-    color:white;
-    margin-bottom:5px;
-    border:1px solid #4d4d4d;
-    background-color:#1f1f1f;
-    background-image: linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(74,72,74) 0%, rgb(28,28,27) 47%, rgb(0,0,0) 100%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(74,72,74)), color-stop(0.47, rgb(28,28,27)), color-stop(1, rgb(0,0,0)));
-    font-family: 'Oswald', sans-serif;
-    font-size:16px;
-    outline:none;
 }
 .input-wrapper textarea{
 

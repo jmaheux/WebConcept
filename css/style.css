@@ -562,12 +562,12 @@ li.listSeparator:hover {
 }
 input,
 textarea {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     color: #888;
     margin-bottom: 5px;
-    border: 1px solid #444;
+    border: 1px solid #3A3A3A;
     background-color: #1F1F1F;
     background-image: linear-gradient(bottom, #282828 0%, #141414 52%, #141414 100%);
     background-image: -o-linear-gradient(bottom, #282828 0%, #141414 52%, #141414 100%);
@@ -578,7 +578,7 @@ textarea {
     font-family: 'Droid Sans', sans-serif;
     font-size: 13px;
     outline: none;
-    padding: 0 7px;
+    padding: 3px 7px;
     font-weight: 300;
 }
 #formEmail{

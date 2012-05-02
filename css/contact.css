@@ -41,7 +41,7 @@
     margin:20px 0px 0px 18px;
 }
 .contactMap{
-    border:2px solid grey;
+    border: 3px solid #666;
     border-radius:3px;
 }
 #contactMap a{
@@ -95,7 +95,7 @@
 }
 .formFloatLeft{
     float:left;
-
+    padding-top: 3px;
 }
 .formFloatRight{
     float:right;
@@ -105,7 +105,7 @@
     margin: 23px 0px 0px 21px;
 }
 .textCss{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Droid Sans', sans-serif;
     color: white;
     line-height: 27px;
