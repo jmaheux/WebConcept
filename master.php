@@ -10,8 +10,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1" xml:lang="fr" />
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One|Righteous' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Poiret+One|Oswald:400,700|Righteous' rel='stylesheet' type='text/css'/>
         <link rel="stylesheet" href="css/style.css"/>
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +28,7 @@
                 <div id="logo">
                     <img src="/WebConcept/images/logo.png" alt=""/>
                 </div>
-                <ul>
+                <ul class="mainMenu">
                     <li>
                         <a href="index.php">
                             <div class="upperBorder">
@@ -109,9 +108,9 @@
                             <ul class="subMenu">
                                 <li>À propos de Web Concept</li>
                                 <li class="listSeparator"></li>
-                                <li>Création de sites web HTML5/CSS3</li>
-                                <li>Sites web compatibles</li>
-                                <li>Sites internet poiur mobiles</li>
+                                <li>Création de sites HTML5/CSS3</li>
+                                <li>Sites internet compatibles</li>
+                                <li>Sites web pour mobiles</li>
                             </ul>
                         </div>
                     </li>

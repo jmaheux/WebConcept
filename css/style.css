@@ -185,11 +185,17 @@ body {
     width: 100%;
     height: 100px;
 }
+.subMenuContainer {
+    position: absolute;
+}
+.subMenu {
+
+}
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MENU @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-#menu ul {
+#menu ul.mainMenu {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     line-height: 81px;
@@ -201,19 +207,31 @@ body {
     padding: 0;
     min-width: 320px;
 }
-#menu ul li {
+#menu ul.mainMenu > li {
     display: block;
     float: left;
     list-style: none;
     cursor: pointer;
     margin-top: -1px;
 }
-#menu ul li a {
+#menu ul.mainMenu > li a {
     text-decoration: none;
     color: white;
 }
-#menu ul li:first-child {
+#menu ul.mainMenu > li:first-child {
     height: 100%;
+}
+.subMenu {
+    position: absolute;
+    padding:10px;
+    line-height: 20px;
+    background-color: #111;
+}
+.subMenu > li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 13px;
 }
 .upperBorder {
     width: 100%;
@@ -256,7 +274,7 @@ body {
     -moz-opacity: 1;       /* mozilla, netscape */
     opacity: 1;           /* fx, safari, opera */
 }
-#menu ul li:hover{
+#menu ul.mainMenu > li:hover{
     background-image: -moz-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
     background-image: -webkit-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
     background-image: -o-radial-gradient(50% -115px, circle farthest-side, rgba(0, 255, 0, 0.6), rgba(0, 255, 0, 0) 70%);
