@@ -115,7 +115,8 @@
 }
 #email:focus,
 #nom:focus,
-#telephone:focus{
+#telephone:focus,
+#message:focus{
     color:white;
     border:1px solid #008806;
 }
