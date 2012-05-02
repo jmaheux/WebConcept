@@ -573,6 +573,10 @@ input[type="button"] {
     text-transform: uppercase;
     font-weight: bold;
 }
+input[type="submit"]:hover,
+input[type="button"]:hover{
+    color: #008806;
+}
 textarea {
     padding: 7px;
 }
