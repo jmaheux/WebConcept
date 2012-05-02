@@ -222,16 +222,48 @@ body {
     height: 100%;
 }
 .subMenu {
+    display: none;
     position: absolute;
-    padding:10px;
+    padding: 7px;
     line-height: 20px;
     background-color: #111;
+    border: 1px solid #333;
+    border-color: #222 #333 #333 #222;
+    text-shadow: 3px 3px 2px black;
 }
 .subMenu > li {
-    list-style: none;
+    list-style-image: url('../images/puce.png');
+    list-style-position: inside;
     text-align: left;
     font-family: 'Droid Sans', sans-serif;
     font-size: 13px;
+    cursor: pointer;
+    padding: 4px 6px 6px 5px;
+    margin: 0;
+    color: #999;
+    border-bottom: 1px dotted #555;
+}
+.subMenu > li:last-child {
+    border: none;
+}
+.subMenu > li:first-child {
+    border:  none;
+}
+.subMenu > li:hover {
+    list-style-image: url('../images/puce_alt.png');
+    background-color: #333;
+    color: white;
+}
+li.listSeparator {
+    list-style: none;
+    border-top: 2px solid #080808;
+    border-bottom: 1px solid #333;
+    padding: 0;
+    margin: 2px -5px 6px -5px;
+}
+li.listSeparator:hover {
+    list-style: none;
+    background-color: inherit;
 }
 .upperBorder {
     width: 100%;
