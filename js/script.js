@@ -5,8 +5,8 @@
 
 $(document).ready(function(){
     $('.mainMenu li:eq(3)').hover(function(){
-        $('.subMenu', this).show('fold', {size:5})
+        $('.subMenu', this).stop(true, true).show('fold', {size:5})
     }, function(){
-        $('.subMenu', this).hide('fold', {size:5})
+        $('.subMenu', this).stop(true, true).hide('fold', {size:5})
     });
 });

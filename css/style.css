@@ -108,13 +108,13 @@ body {
     margin: 0 9px;
     width: auto;
     height: 31px;
-    background-color: rgba(5, 5, 7, 1);
+    background-color: rgba(5, 5, 5, 1);
 }
 .bottomGradientBackground {
     margin: 29px 9px 0;
     width: auto;
     height: 32px;
-    background-color: rgba(5, 5, 7, 1);
+    background-color: rgba(5, 5, 5, 1);
 }
 .clear {
     clear: both;
@@ -166,7 +166,7 @@ body {
 }
 #content
 {
-    background-color: rgba(5, 5, 6, 1);
+    background-color: rgba(5, 5, 5, 1);
     padding-top: 1px;
     border-width: 1px 0;
     border-color: #3C3C3C;
