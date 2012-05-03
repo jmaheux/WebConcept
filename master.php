@@ -167,81 +167,80 @@
             </div>
         </div>
     </div>
-    <div class="floatingSeparator" style="height:50px;">
-    </div>
-    <div id="footer" class="siteWidth">
-        <div class="footerWrapper">
-            <div id="footerbox1" class="boxmargin">
-                <p class="titresFooter">PLAN DU SITE</p>
-                <div class="upperBorder">
-                    <div class="upperLeftBorder"></div>
-                    <div class="upperCenterLeftBorder"></div>
-                    <div class="upperCenterRightBorder"></div>
-                    <div class="upperRightBorder"></div>
-                </div>
-                <ul>
-                    <li>
-                        <a href="index.php"><p>Accueil</p></a>
-                    </li>
-                    <li>
-                        <a href="votre_page.php"><p>Votre page web</p></a>
-                    </li>
-                    <li>
-                        <a href="forfaits.php"><p>Forfaits</p></a>
-                    </li>
-                    <li>
-                        <a href="a_propos.php"><p>À propos</p></a>
-                    </li>
-                    <li>
-                        <a href="contactez_nous.php"><p>Contact</p></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="footerbox2" class="boxmargin">
-                <p class="titresFooter">GALERIE PHOTO</p>
-                <div class="upperBorder">
-                    <div class="upperLeftBorder"></div>
-                    <div class="upperCenterLeftBorder"></div>
-                    <div class="upperCenterRightBorder"></div>
-                    <div class="upperRightBorder"></div>
-                </div>
-                <div id="galeriePhoto">
-                    <div class="divPhoto"><img src="images/html5-css3.png"/></div>
-                    <div class="divPhoto"><img src="images/CSS3.png"/></div>
-                    <div class="divPhoto"><img src="images/graph1.png"/></div>
-                    <div class="divPhoto"><img src="images/compatible.png"/></div>
-                    <div class="divPhoto"><img src="images/W3C_logo.jpg"/></div>
-                    <div class="divPhoto"><img src="images/logo.png"/></div>
-                    <div class="clear" style="float:none;"></div>
-                </div>
-            </div>
-
-            <div id="footerbox3" class="boxmargin">
-                <p class="titresFooter">CONTACTEZ-NOUS</p>
-                <div class="upperBorder">
-                    <div class="upperLeftBorder"></div>
-                    <div class="upperCenterLeftBorder"></div>
-                    <div class="upperCenterRightBorder"></div>
-                    <div class="upperRightBorder"></div>
-                </div>
-                <form id="accueilForm" action="accueil_form_send.php" method="post">
-                    <div>
-                        <input type="text" name="name" id="formName" value="Votre nom"/><br/>
-                        <input type="email" name="email" id="formEmail" value="Votre courriel"/><br/>
-                        <textarea cols="21" rows="5" name="message" id="formMessage">Votre message</textarea><br/>
-                        <input type="submit" value="Envoyer" id="formButton"/>
+        <div id="footer">
+            <div class="footerWrapper siteWidth">
+                <div id="footerbox1" class="boxmargin">
+                    <p class="titresFooter">PLAN DU SITE</p>
+                    <div class="upperBorder">
+                        <div class="upperLeftBorder"></div>
+                        <div class="upperCenterLeftBorder"></div>
+                        <div class="upperCenterRightBorder"></div>
+                        <div class="upperRightBorder"></div>
                     </div>
-                </form>
-            </div>
-            <div class="clear" style="float:none;"/>
-        </div>
+                    <ul>
+                        <li>
+                            <a href="index.php"><p>Accueil</p></a>
+                        </li>
+                        <li>
+                            <a href="votre_page.php"><p>Votre page web</p></a>
+                        </li>
+                        <li>
+                            <a href="forfaits.php"><p>Forfaits</p></a>
+                        </li>
+                        <li>
+                            <a href="a_propos.php"><p>À propos</p></a>
+                        </li>
+                        <li>
+                            <a href="contactez_nous.php"><p>Contact</p></a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div id="social">
-            <div class="divSocialWidth"><span class="spancreation">Création web - <a href="#">Web Concept 2012</a></span></div>
-            <div class="divSocialWidth"><span class="spansocial">Suivez nous : </span><img src="images/facebook.png"/><img src="images/twitter.png"/><img src="images/linkedin.png"/><img class="imgBlogger" src="images/blogger.png" height="30" width="31"/></div>
+                <div id="footerbox2" class="boxmargin">
+                    <p class="titresFooter">GALERIE PHOTO</p>
+                    <div class="upperBorder">
+                        <div class="upperLeftBorder"></div>
+                        <div class="upperCenterLeftBorder"></div>
+                        <div class="upperCenterRightBorder"></div>
+                        <div class="upperRightBorder"></div>
+                    </div>
+                    <div id="galeriePhoto">
+                        <div class="divPhoto"><img src="images/html5-css3.png"/></div>
+                        <div class="divPhoto"><img src="images/CSS3.png"/></div>
+                        <div class="divPhoto"><img src="images/graph1.png"/></div>
+                        <div class="divPhoto"><img src="images/compatible.png"/></div>
+                        <div class="divPhoto"><img src="images/W3C_logo.jpg"/></div>
+                        <div class="divPhoto"><img src="images/logo.png"/></div>
+                        <div class="clear" style="float:none;"></div>
+                    </div>
+                </div>
+
+                <div id="footerbox3" class="boxmargin">
+                    <p class="titresFooter">CONTACTEZ-NOUS</p>
+                    <div class="upperBorder">
+                        <div class="upperLeftBorder"></div>
+                        <div class="upperCenterLeftBorder"></div>
+                        <div class="upperCenterRightBorder"></div>
+                        <div class="upperRightBorder"></div>
+                    </div>
+                    <form id="accueilForm" action="accueil_form_send.php" method="post">
+                        <div>
+                            <input type="text" name="name" id="formName" value="Votre nom"/><br/>
+                            <input type="email" name="email" id="formEmail" value="Votre courriel"/><br/>
+                            <textarea cols="21" rows="5" name="message" id="formMessage">Votre message</textarea><br/>
+                            <input type="submit" value="Envoyer" id="formButton"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="clear" style="float:none;"></div>
+            </div>
+            <div class="horizLine"></div>
+            <div id="social" class="siteWidth">
+                <div class="divSocialWidth first"><span class="spancreation">Création web - <a href="#">Web Concept 2012</a></span></div>
+                <div class="divSocialWidth last"><span class="spansocial">Suivez nous : </span><img src="images/facebook.png"/><img src="images/twitter.png"/><img src="images/linkedin.png"/><img class="imgBlogger" src="images/blogger.png" height="30" width="31"/></div>
+                <div class="clear" style="float:none;"></div>
+            </div>
         </div>
-    </div>
     <script type="text/javascript">
         $(window).load(function(){
 
