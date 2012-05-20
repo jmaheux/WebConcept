@@ -10,6 +10,7 @@ $temp->render();
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="script">
+        <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min_accordion.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#menu ul li:eq(2)').addClass('selected');
@@ -20,6 +21,7 @@ $temp->render();
     <temp:contentPlaceHolder id="content">
         <div class="container">
             <h1 id="greetings">Bonjour et bienvenu sur le site de Web Concept</h1>
+            
         </div>
     </temp:contentPlaceHolder>
 </temp:templateContent>
