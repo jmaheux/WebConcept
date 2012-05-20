@@ -15,6 +15,11 @@ $temp->render();
                 $('#menu ul li:eq(2)').addClass('selected');
             });
         </script>
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript">
+
+        </script>
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="content">
