@@ -12,7 +12,7 @@ $temp->render();
     <temp:contentPlaceHolder id="script">
         <script type="text/javascript">
             $(document).ready(function(){
-                $('#menu ul li:eq(3)').addClass('selected');
+                $('#menu ul.mainMenu > li:eq(3)').addClass('selected');
             });
         </script>
     </temp:contentPlaceHolder>
