@@ -10,7 +10,6 @@ $temp->render();
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="script">
-        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/jquery-eclipse-1.0.js.js"></script>
         <script type="text/javascript" src="js/slider.js"></script>

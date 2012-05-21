@@ -186,10 +186,11 @@ body {
 }
 .floatingSeparator {
     width: 100%;
-    height: 100px;
+    height: 165px;
 }
 .subMenuContainer {
     position: absolute;
+    z-index: 200;
 }
 .subMenu {
 
