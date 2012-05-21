@@ -6,6 +6,15 @@
     width: 300px;
     background-color: #0B0B0B;
 }
+/*.accordions.third h3 {
+    color: #C8C882;
+}
+.accordions.second h3 {
+    color: #929292;
+}
+.accordions.first h3 {
+    color: white;
+}*/
 .accordions-holder h1 {
     margin: 0;
     font-size: 22px;
@@ -20,19 +29,20 @@
     -webkit-box-shadow: 15px 15px 15px black;
     box-shadow: 15px 15px 15px black;
 }
-.ui-accordion .ui-accordion-header {
+.accordions h3 {
     border-top: 1px dotted rgb(63, 63, 71);
     font-weight: normal;
 }
-.ui-accordion .ui-accordion-header:first-of-type {
+.accordions h3:first-of-type {
     border-top: none;
 }
-.ui-accordion .ui-accordion-content {
+#content .accordions div {
     background-color: #111111;
     padding: 8px;
     border: 1px solid #1f1f1f;
     font-size: 15px;
     margin: 0px 2px 5px 2px;
+    line-height: 18px;
 }
 
 

@@ -6,12 +6,18 @@ $temp->render();
 <temp:templateContent xmlns:temp="http://templates"
                       xmlns="http://www.w3.org/1999/xhtml">
     <temp:contentPlaceHolder id="head">
+
         <link rel="stylesheet" href="css/jquery.ui.core.css" />
         <link rel="stylesheet" href="css/jquery.ui.accordion.css" />
         <link rel="stylesheet" href="css/forfaits.css" />
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="script">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#menu ul li:eq(2)').addClass('selected');
+            });
+        </script>
 <!--        <script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
         <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
         <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
@@ -33,6 +39,7 @@ $temp->render();
 
     <temp:contentPlaceHolder id="content">
         <div class="container">
+
             <div class="accordions-holder">
                 <div class="accordions-wrapper">
                     <div class="rightPartHeader">
@@ -46,7 +53,7 @@ $temp->render();
                             <h1>Forfait de base</h1>
                         </div>
                     </div>
-                    <div class="accordions">
+                    <div class="accordions first">
                         <h3>5 pages</h3>
                         <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
@@ -90,7 +97,7 @@ $temp->render();
                             <h1>Forfait profil web</h1>
                         </div>
                     </div>
-                    <div class="accordions">
+                    <div class="accordions second">
                         <h3>5 pages</h3>
                         <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
@@ -140,7 +147,7 @@ $temp->render();
                             <h1>Forfait de base</h1>
                         </div>
                     </div>
-                    <div class="accordions">
+                    <div class="accordions third">
                         <h3>5 pages</h3>
                         <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
