@@ -246,6 +246,7 @@
 
         });
     </script>
+    <script type="text/javascript" src="./js/jquery-ui-1.8.20.custom.min.js"></script>
 <!--    <script type="text/javascript" src="./js/jquery-ui-1.8.20.custom.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.ui.core.js"></script>
     <script type="text/javascript" src="js/jquery.effects.core.min.js"></script>

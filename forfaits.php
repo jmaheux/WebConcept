@@ -6,16 +6,24 @@ $temp->render();
 <temp:templateContent xmlns:temp="http://templates"
                       xmlns="http://www.w3.org/1999/xhtml">
     <temp:contentPlaceHolder id="head">
+
         <link rel="stylesheet" href="css/jquery.ui.core.css" />
         <link rel="stylesheet" href="css/jquery.ui.accordion.css" />
         <link rel="stylesheet" href="css/forfaits.css" />
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="script">
+        <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min_accordion.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#menu ul li:eq(2)').addClass('selected');
+            });
+        </script>
 <!--        <script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
         <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
         <script type="text/javascript" src="js/jquery.ui.accordion.js"></script>
         <script type="text/javascript" src="js/raphael-min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/raphael-it.js"></script>
         <script type="text/javascript" src="js/forfaits.js"></script>
         <script type="text/javascript">
@@ -27,12 +35,14 @@ $temp->render();
         <div id="topFloatingDiv">
             <h1 id="topFloatingTitle">Nos forfaits</h1>
             <div class="separatorLine"></div>
-            <h1 id="topFloatingTitleText">Voici nos trois forfaits prÃ©-conÃ§us. Tous nos forfaits sont Ã©galement personnalisables.</h1>
+            <h1 id="topFloatingTitleText">Voici nos trois forfaits pré-conçus. Tous nos forfaits sont également personnalisables.</h1>
         </div>
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="content">
         <div class="container">
+            <h1 id="greetings">Bonjour et bienvenu sur le site de Web Concept</h1>
+            
             <div class="accordions-holder">
                 <div class="accordions-wrapper">
                     <div class="rightPartHeader">
@@ -48,23 +58,23 @@ $temp->render();
                     </div>
                     <div class="accordions">
                         <h3>5 pages</h3>
-                        <div>Pages standards. Les Ã©lÃ©ments de programmation sont en supplÃ©ment.</div>
+                        <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
-                        <div>Le slider est ajustÃ© a vos besoins. Les images gratuites sont des images pouvant reprÃ©senter votre entreprise. La grandeur des images sera la mÃªme que celle du slider.</div>
+                        <div>Le slider est ajusté a vos besoins. Les images gratuites sont des images pouvant représenter votre entreprise. La grandeur des images sera la même que celle du slider.</div>
                         <h3>Animations</h3>
-                        <div>Animations des menus et des Ã©lÃ©ments de contenu.</div>
+                        <div>Animations des menus et des éléments de contenu.</div>
                         <h3>Formulaire de contact</h3>
                         <div>Un formulaire permettant aux clients de vous contacter. Un formulaire de contact comprend entre 5 et 10 champs de texte.</div>
-                        <h3>HÃ©bergement</h3>
-                        <div>HÃ©bergement gratuit pour une durÃ©e d'un an.</div>
+                        <h3>Hébergement</h3>
+                        <div>Hébergement gratuit pour une durée d'un an.</div>
                         <h3>10 adresses courriel</h3>
-                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter Ã  votre forfait.</div>
+                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter à votre forfait.</div>
                         <h3>1 Gb d'Espace disque</h3>
-                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'Ã  un total de 1 Gb, tout Ã  fait gratuitement.</div>
-                        <h3>Galerie photo et vidÃ©o</h3>
-                        <div>Une gallerie prÃ©sentant des images ou des vidÃ©os de votre choix. Au besoin, nous pouvons aussi vous aider Ã  crÃ©er vos propres vidÃ©os.</div>
-                        <h3>RÃ©fÃ©rencement de base</h3>
-                        <div>Ajout de mots-clÃ©s stratÃ©giques et indexation sur les moteurs de recherche.</div>
+                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'à un total de 1 Gb, tout à fait gratuitement.</div>
+                        <h3>Galerie photo et vidéo</h3>
+                        <div>Une gallerie présentant des images ou des vidéos de votre choix. Au besoin, nous pouvons aussi vous aider à créer vos propres vidéos.</div>
+                        <h3>Référencement de base</h3>
+                        <div>Ajout de mots-clés stratégiques et indexation sur les moteurs de recherche.</div>
                     </div>
                     <div class="rightPartHeader">
                         <div class="upperBorder grey">
@@ -92,29 +102,29 @@ $temp->render();
                     </div>
                     <div class="accordions">
                         <h3>5 pages</h3>
-                        <div>Pages standards. Les Ã©lÃ©ments de programmation sont en supplÃ©ment.</div>
+                        <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
-                        <div>Le slider est ajustÃ© a vos besoins. Les images gratuites sont des images pouvant reprÃ©senter votre entreprise. La grandeur des images sera la mÃªme que celle du slider.</div>
+                        <div>Le slider est ajusté a vos besoins. Les images gratuites sont des images pouvant représenter votre entreprise. La grandeur des images sera la même que celle du slider.</div>
                         <h3>Animations</h3>
-                        <div>Animations des menus et des Ã©lÃ©ments de contenu.</div>
+                        <div>Animations des menus et des éléments de contenu.</div>
                         <h3>Formulaire de contact</h3>
                         <div>Un formulaire permettant aux clients de vous contacter. Un formulaire de contact comprend entre 5 et 10 champs de texte.</div>
                         <h3>Blog, forum ou articles</h3>
-                        <div>Gardez contact avec vos clients Ã  l'aide d'un blog, d'un forum ou d'articles informatifs. Un systÃ¨me de gestion de contenu vous permettra d'en faire la gestion.</div>
-                        <h3>Design personnalisÃ©</h3>
+                        <div>Gardez contact avec vos clients à l'aide d'un blog, d'un forum ou d'articles informatifs. Un système de gestion de contenu vous permettra d'en faire la gestion.</div>
+                        <h3>Design personnalisé</h3>
                         <div>Nous construisons sur mesure chacune des parties de chacune de vos pages.</div>
-                        <h3>HÃ©bergement</h3>
-                        <div>HÃ©bergement gratuit pour une durÃ©e d'un an.</div>
+                        <h3>Hébergement</h3>
+                        <div>Hébergement gratuit pour une durée d'un an.</div>
                         <h3>20 adresses courriel</h3>
-                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter Ã  votre forfait.</div>
+                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter à votre forfait.</div>
                         <h3>2 Gb d'Espace disque</h3>
-                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'Ã  un total de 2 Gb, tout Ã  fait gratuitement.</div>
-                        <h3>Galerie photo et vidÃ©o</h3>
-                        <div>Une gallerie prÃ©sentant des images ou des vidÃ©os de votre choix. Au besoin, nous pouvons aussi vous aider Ã  crÃ©er vos propres vidÃ©os.</div>
-                        <h3>RÃ©fÃ©rencement ciblÃ©</h3>
-                        <div>Ajout de mots-clÃ©s stratÃ©giques et indexation sur les moteurs de recherche. DÃ©finition d'un plan de rÃ©fÃ©rencement stratÃ©gique.</div>
-                        <h3>RÃ©seaux sociaux</h3>
-                        <div>Inscription sur les rÃ©seaux sociaux de votre choix et mise en lien avec votre site.</div>
+                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'à un total de 2 Gb, tout à fait gratuitement.</div>
+                        <h3>Galerie photo et vidéo</h3>
+                        <div>Une gallerie présentant des images ou des vidéos de votre choix. Au besoin, nous pouvons aussi vous aider à créer vos propres vidéos.</div>
+                        <h3>Référencement ciblé</h3>
+                        <div>Ajout de mots-clés stratégiques et indexation sur les moteurs de recherche. Définition d'un plan de référencement stratégique.</div>
+                        <h3>Réseaux sociaux</h3>
+                        <div>Inscription sur les réseaux sociaux de votre choix et mise en lien avec votre site.</div>
                     </div>
                     <div class="rightPartHeader">
                         <div class="upperBorder grey">
@@ -142,23 +152,23 @@ $temp->render();
                     </div>
                     <div class="accordions">
                         <h3>5 pages</h3>
-                        <div>Pages standards. Les Ã©lÃ©ments de programmation sont en supplÃ©ment.</div>
+                        <div>Pages standards. Les éléments de programmation sont en supplément.</div>
                         <h3>Slider avec 5 images gratuites</h3>
-                        <div>Le slider est ajustÃ© a vos besoins. Les images gratuites sont des images pouvant reprÃ©senter votre entreprise. La grandeur des images sera la mÃªme que celle du slider.</div>
+                        <div>Le slider est ajusté a vos besoins. Les images gratuites sont des images pouvant représenter votre entreprise. La grandeur des images sera la même que celle du slider.</div>
                         <h3>Animations</h3>
-                        <div>Animations des menus et des Ã©lÃ©ments de contenu.</div>
+                        <div>Animations des menus et des éléments de contenu.</div>
                         <h3>Formulaire de contact</h3>
                         <div>Un formulaire permettant aux clients de vous contacter. Un formulaire de contact comprend entre 5 et 10 champs de texte.</div>
-                        <h3>HÃ©bergement</h3>
-                        <div>HÃ©bergement gratuit pour une durÃ©e d'un an.</div>
+                        <h3>Hébergement</h3>
+                        <div>Hébergement gratuit pour une durée d'un an.</div>
                         <h3>10 adresses courriel</h3>
-                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter Ã  votre forfait.</div>
+                        <div>Si vous avez besoin de plus de 10 adresses courriel, il est possible d'en ajouter à votre forfait.</div>
                         <h3>1 Gb d'Espace disque</h3>
-                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'Ã  un total de 1 Gb, tout Ã  fait gratuitement.</div>
-                        <h3>Galerie photo et vidÃ©o</h3>
-                        <div>Une gallerie prÃ©sentant des images ou des vidÃ©os de votre choix. Au besoin, nous pouvons aussi vous aider Ã  crÃ©er vos propres vidÃ©os.</div>
-                        <h3>RÃ©fÃ©rencement de base</h3>
-                        <div>Ajout de mots-clÃ©s stratÃ©giques et indexation sur les moteurs de recherche.</div>
+                        <div>Votre pouvez emmagasiner du contenu et de l'information jusqu'à un total de 1 Gb, tout à fait gratuitement.</div>
+                        <h3>Galerie photo et vidéo</h3>
+                        <div>Une gallerie présentant des images ou des vidéos de votre choix. Au besoin, nous pouvons aussi vous aider à créer vos propres vidéos.</div>
+                        <h3>Référencement de base</h3>
+                        <div>Ajout de mots-clés stratégiques et indexation sur les moteurs de recherche.</div>
                     </div>
                     <div class="rightPartHeader">
                         <div class="upperBorder grey">
