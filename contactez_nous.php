@@ -26,7 +26,7 @@ $temp->render();
         <div id="topFloatingDiv">
             <h1 id="topFloatingTitle">Contactez-nous</h1>
             <div class="separatorLine"></div>
-            <h1 id="topFloatingTitleText">Lorem ipsum ladea teteal oerloea erfeattera lorep isum ladea</h1>
+            <h1 id="topFloatingTitleText">Vous pouvez nous contacter par téléphone, courriel ou à l'aide du formulaire.</h1>
         </div>
     </temp:contentPlaceHolder>
 

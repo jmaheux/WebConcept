@@ -246,10 +246,10 @@
 
         });
     </script>
-<!--    <script type="text/javascript" src="./js/jquery-ui-1.8.20.custom.min.js"></script>-->
+<!--    <script type="text/javascript" src="./js/jquery-ui-1.8.20.custom.min.js">BRRRR</script>-->
     <script type="text/javascript" src="js/jquery.ui.core.js"></script>
     <script type="text/javascript" src="js/jquery.effects.core.min.js"></script>
-    <script type="text/javascript" src="js/jquery.effects.fold.min.js"></script>
+    <script type="text/javascript" src="js/jquery.effects.scale.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 
     <!--[if lt IE 9]>

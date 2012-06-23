@@ -25,7 +25,6 @@ $temp->render();
         <script type="text/javascript" src="js/raphael-it.js"></script>
         <script type="text/javascript" src="js/forfaits.js"></script>
         <script type="text/javascript" src="js/jquery.effects.fade.min.js"></script>
-        <script type="text/javascript" src="js/jquery.effects.scale.min.js"></script>
     </temp:contentPlaceHolder>
 
     <temp:contentPlaceHolder id="topFloatingBox">
