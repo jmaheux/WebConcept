@@ -234,7 +234,6 @@ body {
     background-color: #111;
     border: 1px solid #333;
     border-color: #222 #333 #333 #222;
-    text-shadow: 3px 3px 2px black;
 }
 .subMenu > li {
     list-style-image: url('../images/puce.png');

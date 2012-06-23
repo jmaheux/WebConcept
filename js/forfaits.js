@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 var isOver = null;
+var isOverNext = null;
 
 $(document).ready(function(){
     $('#menu ul li:eq(2)').addClass('selected');
@@ -19,7 +20,7 @@ $(document).ready(function(){
     $('.accordions-wrapper:eq(2) h1:eq(1)').raphaelIt("90-#4d4320:10-#fffccc:90-#fff", 'right', 'top');
 
     $('.accordions').accordion({
-        event: 'mymouseevent',
+        event: 'mymouseevent click',
         //fillSpace: true,
         collapsible: true,
         autoHeight: false,
@@ -45,11 +46,25 @@ $(document).ready(function(){
 
     $('.accordions h3').bind('mouseover', function(){
         isOver = this;
-        var that = this;
-        setTimeout(function(){
-            if (isOver == that)
-                $(that).trigger('mymouseevent');
-        }, 200);
+        if (!$(this).hasClass('ui-accordion-header-active')) {
+            var that = this;
+            setTimeout(function(){
+                if (isOver == that){
+                    $(that).trigger('mymouseevent');
+
+                    var stillOn = function(){
+                        isOver = $(this).prev().get();
+                    };
+
+                    if (isOverNext != null)
+                        $(isOverNext).unbind('mouseenter', stillOn);
+
+                    isOverNext = $(that).next().get();
+
+                    $(that).next().bind('mouseenter', stillOn);
+                }
+            }, 500);
+        }
     });
 
     $('.accordions').bind('mouseleave', function(){
